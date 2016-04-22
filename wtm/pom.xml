@@ -11,12 +11,12 @@
 </repository>
 </repositories>
 <dependencies>
- <!-- 
+ 
  <dependency>
     <groupId>com.github.premganz</groupId>
     <artifactId>bg2</artifactId>
-    <version>v0.9</version>
+    <version>v1.0</version>
 </dependency>
- -->
+ 
  </dependencies>
 </project>
