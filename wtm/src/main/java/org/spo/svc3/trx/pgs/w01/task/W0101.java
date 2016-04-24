@@ -9,10 +9,10 @@ import org.spo.cms3.svc.SocketConnector;
 import org.spo.ifs3.dsl.controller.NavEvent;
 import org.spo.ifs3.dsl.controller.TrxInfo;
 import org.spo.ifs3.dsl.model.AbstractTask;
-import org.spo.svc3.trx.pgs.m01.cmd.LA01T;
+import org.spo.svc3.trx.pgs.m99.cmd.LA01T;
+import org.spo.svc3.trx.pgs.w01.handler.W01Handler;
 import org.spo.svc3.trxdemo.pgs.c01.cmd.CA01T;
 import org.spo.svc3.trxdemo.pgs.mc.cmd.PostContent;
-import org.spo.svc3.trx.pgs.w01.handler.W01Handler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
