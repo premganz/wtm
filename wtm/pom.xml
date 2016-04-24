@@ -32,8 +32,8 @@
 
 		<dependency>
 			<groupId>com.github.premganz</groupId>
-			<artifactId>bg2</artifactId>
-			<version>1.2</version>
+			<artifactId>bg3</artifactId>
+			<version>v1.4.1</version>
 		</dependency>
 	</dependencies>
 
