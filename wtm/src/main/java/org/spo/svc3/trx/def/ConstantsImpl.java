@@ -9,7 +9,7 @@ public class ConstantsImpl implements Constants {
 		if(!System.getProperty("os.name").startsWith("Windows")){
 			return "/usr/local/share/data-cms/wtm";
 		}else{
-			return "C:\\Users\\premganesh\\git\\bg1_3\\src\\main\\resources\\data-cms";
+			return "C:\\Users\\premganesh\\git\\bg2\\src\\main\\resources\\data-cms";
 		}
 	}
 
