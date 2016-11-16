@@ -1,10 +1,10 @@
-package org.spo.svc2.trx.pgs.c01.cmd;
+package org.spo.svc2.trx.pgs.b01.cmd;
 
 import org.spo.svc2.trx.pgs.mc.cmd.PostContent;
 
 
 
-public class CA01T
+public class BA01T
 {
 	private String list_pagination_link;
 

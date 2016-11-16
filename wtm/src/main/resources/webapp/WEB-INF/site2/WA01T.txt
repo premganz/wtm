@@ -1,0 +1,34 @@
+{
+	"page_sub_title": "Way to Media",
+	"page_title": "Blogs",		
+	"page_content_text": "WA0101",
+	"SECTION_FEED_ZN": [
+		{
+			"id": "WA0102",
+			"meta_date": "A new way to photograph",
+			"meta_tags": "Photos, Photography",
+			"meta_author": "Ravichandran",
+			"likes":"11",
+			"cover_media_type_cd":"PHOTO",
+			"cover_media_url":"",
+			"brief_content":""
+			
+		},
+		{
+			"id": "WA0103",
+			"meta_date": "A new way to Video",
+			"meta_tags": "Photos, Photography",
+			"meta_author": "Ravichandran",
+			"likes":"11",
+			"cover_media_type_cd":"VIDEO",
+			"cover_media_url":"",
+			"brief_content":""
+			
+		}
+	],
+	"page_id": "WA01T",	
+	"section_list_heading": "Selected Blogs",	
+	"list_pagination_ic": "1",
+	"list_pagination_txt": "More on this",
+	"list_pagination_link": "C01T1"	
+}

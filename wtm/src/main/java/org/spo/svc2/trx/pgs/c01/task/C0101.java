@@ -9,9 +9,10 @@ import org.spo.cms2.svc.SocketConnector;
 import org.spo.ifs2.dsl.controller.NavEvent;
 import org.spo.ifs2.dsl.controller.TrxInfo;
 import org.spo.ifs2.dsl.model.AbstractTask;
-import org.spo.svc2.trx.pgs.c01.cmd.CA01T;
+import org.spo.svc2.trx.pgs.c01.cmd.CX99Connector;
+import org.spo.svc2.trx.pgs.c01.cmd.CX99T;
 import org.spo.svc2.trx.pgs.c01.handler.C01Handler;
-import org.spo.svc2.trx.pgs.m01.cmd.LA01T;
+import org.spo.svc2.trx.pgs.m01.cmd.LA99T;
 import org.spo.svc2.trx.pgs.mc.cmd.PostContent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -50,23 +51,11 @@ public class C0101 extends AbstractTask {
 
 		try{
 			Gson gson = new Gson();
-			Type typ = new TypeToken<LA01T>(){}.getType();//FIXME right now only string works
-			LA01T cmd_menu= gson.fromJson(response,typ);		
+			Type typ = new TypeToken<LA99T>(){}.getType();//FIXME right now only string works
+			LA99T cmd_menu= gson.fromJson(response,typ);		
 
-			typ = new TypeToken<CA01T>(){}.getType();//FIXME right now only string works
-			CA01T cmd= gson.fromJson(response_content,typ);		
-			if(cmd.getPage_content_type_cd().equals("1")){
-				String contentId1 = cmd.getPage_content_text();
-				response = svc.readUpPage("posts", contentId1);
-				String response_meta = svc.readUpPage("posts", contentId1+"_meta");
-				response=response.equals("")?"<p>blank reply</p>":response;				
-				cmd.setPage_content_text(response);	
-				PostContent contentObj = new PostContent();
-				contentObj.setHtmlContent(response);
-				contentObj.setMeta(response_meta);
-				cmd.setPage_content_meta(response_meta);
-				cmd.setContentObject(contentObj);
-			}
+			typ = new TypeToken<CX99T>(){}.getType();//FIXME right now only string works
+			CX99T cmd= new CX99Connector().prepareContent(svc,dataId_Content);
 			info.addToModelMap("menu",cmd_menu);
 			info.addToModelMap("message",cmd);
 			System.out.println(cmd.toString());

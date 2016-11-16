@@ -1,0 +1,65 @@
+{
+	"page_sub_title": "An Idea of Liberal Education",
+	"page_title": "What it is",
+	"page_description_text": "Base Page Idea pages, content redefines cd=1 no override, 2=compl override, 3=merge",
+	
+	"SECTION_CONTENT_ZN_REDEFINES_CD": "1",	
+	
+	"SECTION_CONTENT_THREAD_ZN": [	
+		{	
+			"link_idx": "C01T",
+			"page_content_type_cd": "1",
+			"page_content_text": "C01C01",
+			"META_NOTE":"Introduction on Liberal Education-Angel falls page ",			
+			"page_next_page_present_ic": "0",
+			"page_tags": "",
+			"page_cross_links_idx":""
+			
+		}
+	
+	
+	],
+	
+	
+	"SECTION_LINKS_ZN_REDEFINES_CD": "1",	
+	"section_list_heading": "Selected Blogs",		
+	"SECTION_LINKS_ZN": [
+		{
+			"link_idx": "?event=EV_DTL_SHORTCUT_C04T",
+			"link_title": "Liberal Education and STEM",
+			"link_sub_title": "Courtersy-AACU",
+			"link_by": "Admin",
+			"link_date": "September 1, 2015"
+		}
+		
+	],
+	
+	
+	"SECTION_NEWS_ZN_REDEFINES_CD": "1",	
+	"SECTION_NEWS_ZN": [
+		{
+			"link_idx": "1",
+			"link_href": "home/MC01",
+			"link_title": "Liberal Education and STEM",
+			"link_sub_title": "Courtersy-AACU",
+			"link_by": "Admin",
+			"link_date": "September 1, 2015"
+		}
+	],
+	
+	
+	"SECTION_TAGS_ZN_REDEFINES_CD": "1",	
+	"SECTION_TAGS_ZN": [
+		{
+			"link_href": "home/MC01",
+			"link_title": "Liberal Education and STEM",
+			"link_sub_title": "Courtersy-AACU",
+			"link_by": "Admin",
+			"link_date": "September 1, 2015"
+		}
+	]
+	
+	
+	
+	
+}

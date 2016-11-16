@@ -70,35 +70,10 @@
 						</ul>
 						
 						<ul>
-							<lh> <h2 style="color:antiquewhite">The Idea1</h2> <hr></hr></lh>
+							<lh> <h2 style="color:antiquewhite">Liberal Education</h2> <hr></hr></lh>
 						</ul>
 						
 						<div th:each="link : ${menu.MENU_LINKS_IDEA_ZN}">
-							<ul>	
-								<lh> <a th:text="${link.link_title}" style="cursor: pointer;" href="/home/A01T"></a> </lh>					
-								<div th:each="sublink : ${link.MENU_SUBLINKS_ZN}">
-								<li  th:id="${sublink.link_id}"><a th:text="${sublink.link_title}" style="cursor: pointer;" th:href="${sublink.link_href}" onclick=""></a></li>						
-								</div>
-							</ul>
-						</div>
-					
-						<ul>
-							<lh> <h2 style="color:antiquewhite">Audience</h2> <hr></hr></lh>
-						</ul>
-						<div th:each="link : ${menu.MENU_LINKS_AUDIENCE_ZN}">
-							<ul>	
-								<lh> <a th:text="${link.link_title}" style="cursor: pointer;" href="/home/A01T"></a> </lh>					
-								<div th:each="sublink : ${link.MENU_SUBLINKS_ZN}">
-								<li  th:id="${sublink.link_id}"><a th:text="${sublink.link_title}" style="cursor: pointer;" th:href="${sublink.link_href}" onclick=""></a></li>						
-								</div>
-							</ul>
-						</div>
-					
-										
-						<ul>
-							<lh> <h2 style="color:antiquewhite">Getting Involved</h2> <hr></hr></lh>
-						</ul>
-						<div th:each="link : ${menu.MENU_LINKS_INVOLVED_ZN}">
 							<ul>	
 								<lh> <a th:text="${link.link_title}" style="cursor: pointer;" href="/home/A01T"></a> </lh>					
 								<div th:each="sublink : ${link.MENU_SUBLINKS_ZN}">
@@ -118,6 +93,32 @@
 								</div>
 							</ul>
 						</div>
+					
+						<ul>
+							<lh> <h2 style="color:antiquewhite">Blogs</h2> <hr></hr></lh>
+						</ul>
+						<div th:each="link : ${menu.MENU_LINKS_BLOGS_ZN}">
+							<ul>	
+								<lh> <a th:text="${link.link_title}" style="cursor: pointer;" href="/home/A01T"></a> </lh>					
+								<div th:each="sublink : ${link.MENU_SUBLINKS_ZN}">
+								<li  th:id="${sublink.link_id}"><a th:text="${sublink.link_title}" style="cursor: pointer;" th:href="${sublink.link_href}" onclick=""></a></li>						
+								</div>
+							</ul>
+						</div>
+					
+										
+						<ul>
+							<lh> <h2 style="color:antiquewhite">Meta</h2> <hr></hr></lh>
+						</ul>
+						<div th:each="link : ${menu.MENU_LINKS_META_ZN}">
+							<ul>	
+								<lh> <a th:text="${link.link_title}" style="cursor: pointer;" href="/home/A01T"></a> </lh>					
+								<div th:each="sublink : ${link.MENU_SUBLINKS_ZN}">
+								<li  th:id="${sublink.link_id}"><a th:text="${sublink.link_title}" style="cursor: pointer;" th:href="${sublink.link_href}" onclick=""></a></li>						
+								</div>
+							</ul>
+						</div>
+						
 							
 						<ul>
 							<lh>
@@ -139,22 +140,23 @@
 						<ul><lh> </lh></ul><ul><lh> </lh></ul><ul><lh> </lh></ul><ul><lh> </lh></ul>
 					</div>
 					</div>
- 				<div id="pageId" th:utext="${message.page_id}"> 				
+ 				<div id="pageId" th:utext="${message.template_id}"> 				
  				</div>
- 				<div th:utext="${message.contentObject.metaMap['contentid']}"></div>
-				<div th:switch="${message.page_id}">
+ 				<!-- <div th:utext="${message.contentObject.metaMap['contentid']}"></div> -->
+ 				<div th:utext="${message.cont_page_content_id}">
+				<div th:switch="${message.template_id}">
 					<p th:case='A01T'><a href="http://info.flagcounter.com/fhT3"><img src="http://s01.flagcounter.com/count2/fhT3/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></img></a></p>					
 				</div>
 				</div>
 				<div class="col-lg-7  col-md-8 col-sm-8 col-xs-12">
 					<div class="container1" style="border-right-color: yellow;">
 						<div th:utext="${message.page_description_text}"></div>
-						<div th:utext="${message.page_content_text}"></div>
+						<div th:utext="${message.cont_page_content_text}"></div>
 					</div>
 
 					<ul class="pager">
-						<li class="next"><a th:href="${message.list_pagination_link}" style="background-color: gold;">
-								<div th:utext="${message.list_pagination_txt}"></div>
+						<li class="next"><a th:href="${message.cont_page_next_page_href}" style="background-color: gold;">
+								<div th:utext="${message.cont_page_next_page_label}"></div>
 						</a></li>
 					</ul>
 					<!-- Main Content -->
@@ -167,7 +169,7 @@
 						<div class="row1" th:each="link : ${message.SECTION_LINKS_ZN}">
 
 							<div class="post-preview">
-								<a th:href="${link.link_id}">
+								<a th:href="${link.link_data_id}">
 									<h3 th:text="${link.link_title}"></h3>
 									<h4 class="post-subtitle" th:text="${link.link_sub_title}"></h4>
 								</a>
@@ -191,7 +193,7 @@
 						<div class="row" th:each="link : ${message.SECTION_NEWS_ZN}">
 		
 				<div class="footnote" >	
-					<a th:href="${link.link_id}"	 target="_blank">
+					<a th:href="${link.link_href}"	 target="_blank">
 						<p  th:text="${link.link_title}"></p>
 						<p class="post-subtitle" th:text="${link.link_sub_title}"></p>
 					</a>

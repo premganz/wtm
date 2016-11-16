@@ -9,8 +9,9 @@ import org.spo.cms2.svc.SocketConnector;
 import org.spo.ifs2.dsl.controller.NavEvent;
 import org.spo.ifs2.dsl.controller.TrxInfo;
 import org.spo.ifs2.dsl.model.AbstractTask;
-import org.spo.svc2.trx.pgs.c01.cmd.CA01T;
-import org.spo.svc2.trx.pgs.m01.cmd.LA01T;
+import org.spo.svc2.trx.pgs.c01.cmd.CX99Connector;
+import org.spo.svc2.trx.pgs.c01.cmd.CX99T;
+import org.spo.svc2.trx.pgs.m01.cmd.LA99T;
 import org.spo.svc2.trx.pgs.m01.handler.M01Handler;
 import org.spo.svc2.trx.pgs.mc.cmd.PostContent;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,41 +34,28 @@ public class M0101 extends AbstractTask {
 	
 	@Override
 	public NavEvent initTask(String dataId, TrxInfo info) throws Exception {
-
-		String contentId= dataId;
+		//here the dataId is used in the context of the template
+		String templateId= dataId;
 		String response="";
 		String response_content="";
 
-		response = svc.readUpPage("templates", contentId);
+		response = svc.readUpPage("templates", "LA01T");
 
 		String dataId_Content="" ;
-		if(dataId.equals("LA01T")){
 			//regular Menu can be mapped with A01T content
-			dataId_Content = "A01T";
+			dataId_Content = dataId;
 
-		}
-
+		//The template id's data file.
 		response_content = svc.readUpPage("templates", dataId_Content);
 
 		try{
 			Gson gson = new Gson();
-			Type typ = new TypeToken<LA01T>(){}.getType();//FIXME right now only string works
-			LA01T cmd_menu= gson.fromJson(response,typ);		
+			Type typ = new TypeToken<LA99T>(){}.getType();//FIXME right now only string works
+			LA99T cmd_menu= gson.fromJson(response,typ);		
 
-			typ = new TypeToken<CA01T>(){}.getType();//FIXME right now only string works
-			CA01T cmd= gson.fromJson(response_content,typ);		
-			if(cmd.getPage_content_type_cd().equals("1")){
-				String contentId1 = cmd.getPage_content_text();
-				response = svc.readUpPage("posts", contentId1);
-				String response_meta = svc.readUpPage("posts", contentId1+"_meta");
-				response=response.equals("")?"<p>blank reply</p>":response;				
-				cmd.setPage_content_text(response);	
-				PostContent contentObj = new PostContent();
-				contentObj.setHtmlContent(response);
-				contentObj.setMeta(response_meta);
-				cmd.setPage_content_meta(response_meta);
-				cmd.setContentObject(contentObj);
-			}
+			typ = new TypeToken<CX99T>(){}.getType();//FIXME right now only string works
+			CX99T cmd= new CX99Connector().prepareContent(svc,dataId_Content);		
+			
 			info.addToModelMap("menu",cmd_menu);
 			info.addToModelMap("message",cmd);
 			System.out.println(cmd.toString());
@@ -75,6 +63,7 @@ public class M0101 extends AbstractTask {
 		}catch(Exception e){
 			System.out.println("Error during messagePayload processing from  TestResourceServerException on" );
 			e.printStackTrace();
+			
 		}
 
 		return M01Handler.EV_INIT_01;
@@ -84,6 +73,16 @@ public class M0101 extends AbstractTask {
 	public NavEvent processViewEvent(String event, TrxInfo info) {
 		if(event.startsWith("EV_DTL")){
 			String dataId = event.replaceAll("EV_DTL_","");
+			NavEvent navEvent = M01Handler.EV_SWITCH_TO_CONTENT;
+			navEvent.dataId=dataId;
+			return navEvent;
+		}else if(event.startsWith("EV_SUB_LAND")){
+			String dataId = event.replaceAll("EV_SUB_LAND_","");
+			NavEvent navEvent = M01Handler.EV_SWITCH_TO_SUB_LAND;
+			navEvent.dataId=dataId;
+			return navEvent;
+		}else if(event.startsWith("EV_SHORTCUT")){
+			String dataId = event.replaceAll("EV_SHORTCUT_","");
 			NavEvent navEvent = M01Handler.EV_SWITCH_TO_CONTENT;
 			navEvent.dataId=dataId;
 			return navEvent;

@@ -1,0 +1,17 @@
+{
+	
+	"meta_description_text": " A basic content template that forms the object model",
+	
+	
+		
+	"meta_page_content_type_cd": "CXT",
+	"meta_page_notes_author":"admin",
+	"meta_page_notes_date":"01/01/2016",
+	"meta_page_notes_categories":"B01,B02"
+	
+	
+	
+	
+	
+	
+}

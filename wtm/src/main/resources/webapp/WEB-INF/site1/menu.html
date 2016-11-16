@@ -1,0 +1,78 @@
+<div id="menu2" style="Opacity:0.9">
+				
+				
+						<ul>
+							<lh> <a th:text="Home" style="cursor: pointer;" th:href= "${menu.home_link_ref}"></a> </lh>	
+							<lh> <a th:text="About" style="cursor: pointer;" th:href= "${menu.about_link_ref}"></a> </lh>
+						</ul>
+						
+						<ul>
+							<lh> <h2 style="color:antiquewhite">Liberal Education</h2> <hr></hr></lh>
+						</ul>
+						
+						<div th:each="link : ${menu.MENU_LINKS_IDEA_ZN}">
+							<ul>	
+								<lh> <a th:text="${link.link_title}" style="cursor: pointer;" href="/home/A01T"></a> </lh>					
+								<div th:each="sublink : ${link.MENU_SUBLINKS_ZN}">
+								<li  th:id="${sublink.link_id}"><a th:text="${sublink.link_title}" style="cursor: pointer;" th:href="${sublink.link_href}" onclick=""></a></li>						
+								</div>
+							</ul>
+						</div>
+						<ul>
+							<lh> <h2 style="color:antiquewhite">Resources</h2> <hr></hr></lh>
+						</ul>
+						
+						<div th:each="link : ${menu.MENU_LINKS_RESOURCES_ZN}">
+							<ul>	
+								<lh> <a th:text="${link.link_title}" style="cursor: pointer;" href="/home/A01T"></a> </lh>					
+								<div th:each="sublink : ${link.MENU_SUBLINKS_ZN}">
+								<li  th:id="${sublink.link_id}"><a th:text="${sublink.link_title}" style="cursor: pointer;" th:href="${sublink.link_href}" onclick=""></a></li>						
+								</div>
+							</ul>
+						</div>
+					
+						<ul>
+							<lh> <h2 style="color:antiquewhite">Blogs</h2> <hr></hr></lh>
+						</ul>
+						<div th:each="link : ${menu.MENU_LINKS_BLOGS_ZN}">
+							<ul>	
+								<lh> <a th:text="${link.link_title}" style="cursor: pointer;" href="/home/A01T"></a> </lh>					
+								<div th:each="sublink : ${link.MENU_SUBLINKS_ZN}">
+								<li  th:id="${sublink.link_id}"><a th:text="${sublink.link_title}" style="cursor: pointer;" th:href="${sublink.link_href}" onclick=""></a></li>						
+								</div>
+							</ul>
+						</div>
+					
+										
+						<ul>
+							<lh> <h2 style="color:antiquewhite">Meta</h2> <hr></hr></lh>
+						</ul>
+						<div th:each="link : ${menu.MENU_LINKS_META_ZN}">
+							<ul>	
+								<lh> <a th:text="${link.link_title}" style="cursor: pointer;" href="/home/A01T"></a> </lh>					
+								<div th:each="sublink : ${link.MENU_SUBLINKS_ZN}">
+								<li  th:id="${sublink.link_id}"><a th:text="${sublink.link_title}" style="cursor: pointer;" th:href="${sublink.link_href}" onclick=""></a></li>						
+								</div>
+							</ul>
+						</div>
+						
+							
+						<ul>
+							<lh>
+							<a>Links</a></lh>
+							<li><a style="cursor: pointer;" onclick="return form_action_load('','pages','curriculum','view',0);">CBSE</a></li>
+							<li><a style="cursor: pointer;" href="http://www.cisce.org/" target="_blank">ICSE | ISC Syllabus</a></li>
+							<li><a style="cursor: pointer;" href="http://www.aacu.org/" target="_blank">AACU</a></li>
+							<li><a style="cursor: pointer;" href="/admin/metrics">Login</a></li>
+						</ul>
+					
+						<ul><lh> </lh></ul>
+						<ul><lh> </lh></ul>
+						<ul><lh> </lh></ul>
+						<ul><lh> </lh></ul>
+						<ul><lh> </lh></ul>
+						<ul><lh> </lh></ul>
+						<ul><lh> </lh></ul>
+						<ul><lh> </lh></ul>
+						<ul><lh> </lh></ul><ul><lh> </lh></ul><ul><lh> </lh></ul><ul><lh> </lh></ul>
+					</div>

@@ -14,12 +14,12 @@ public class ConstantsImpl implements Constants {
 	}
 
 	public String getLandingPage() {
-		return "trx/M01/LA01T";
+		return "trx/M01/A01T";
 	}
 
 	public int getPortNumber() {
 		// TODO Auto-generated method stub
-		return 80;
+		return 8089;
 	}
 
 }

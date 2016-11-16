@@ -1,0 +1,123 @@
+{
+	"home_link_ref": "/",
+	"about_link_ref": "?event=EV_ABOUT",
+	"MENU_LINKS_IDEA_ZN": [
+		{
+			"link_title": "Liberal Education Idea",
+			"MENU_SUBLINKS_ZN": [
+				{
+					"link_id": "LB01T",
+					"link_href": "?event=EV_SUB_LAND_LB01T",
+					"link_title": "Idea Overview"
+				},
+				{
+					"link_id": "C03T",
+					"link_href": "?event=EV_DTL_C03T",
+					"link_title": "Audience-School"
+				},
+				{
+					"link_id": "C03T",
+					"link_href": "?event=EV_DTL_C03T",
+					"link_title": "Audience-Students"
+				}
+			]
+		},
+		{
+			"link_title": "Getting Involved",
+			"MENU_SUBLINKS_ZN": [
+				{
+					"link_id": "LB01T",
+					"link_href": "?event=EV_SUB_LAND_LB01T",
+					"link_title": "Getting Involved"
+				},
+				{
+					"link_id": "C03T",
+					"link_href": "?event=EV_DTL_C03T",
+					"link_title": "Programmes-Schools"
+				},
+				{
+					"link_id": "C03T",
+					"link_href": "?event=EV_DTL_C03T",
+					"link_title": "FAQs"
+				}
+			]
+		}
+	],
+	"MENU_LINKS_RESOURCES_ZN": [
+		{
+			"link_title": "Knowledge",
+			"MENU_SUBLINKS_ZN": [
+				{
+					"link_id": "E01T",
+					"link_href": "?event=EV_DTL_E01T",
+					"link_title": "Lecture Notes"
+				},
+				{
+					"link_id": "E02T1",
+					"link_href": "?event=EV_DTL_E02T1",
+					"link_title": "Videos"
+				},
+				{
+					"link_id": "E02T",
+					"link_href": "?event=EV_DTL_E02T",
+					"link_title": "External Links"
+				}
+			]
+		}
+	],
+	"MENU_LINKS_BLOGS_ZN": [
+		{
+			"link_title": "Archives",
+			"MENU_SUBLINKS_ZN": [
+				{
+					"link_id": "E01T",
+					"link_href": "?event=EV_BLOG",
+					"link_title": "Socio Economics"
+				},
+				{
+					"link_id": "E02T1",
+					"link_href": "?event=EV_D03T",
+					"link_title": "ComputerSciences"
+				}
+			]
+		},
+		{
+			"link_title": "Latest",
+			"MENU_SUBLINKS_ZN": [
+				{
+					"link_id": "D01T",
+					"link_href": "?event=EV_DTL_D01T",
+					"link_title": "On Computers"
+				}
+			]
+		}
+	],
+	"MENU_LINKS_META_ZN": [
+		{
+			"link_title": "Users",
+			"MENU_SUBLINKS_ZN": [
+				{
+					"link_id": "D01",
+					"link_href": "?event=EV_DTL_D03T",
+					"link_title": "Feedback"
+				},
+				{
+					"link_id": "C02",
+					"link_href": "../trx/C01/C01T",
+					"link_title": "Enroll"
+				},
+				{
+					"link_id": "C02",
+					"link_href": "../trx/C01/C01T",
+					"link_title": "Admin"
+				},
+				{
+					"link_id": "C02",
+					"link_href": "../trx/C01/C01T",
+					"link_title": "Contact"
+				}
+			]
+		}
+	],
+	"list_pagination_ic": "1"
+}

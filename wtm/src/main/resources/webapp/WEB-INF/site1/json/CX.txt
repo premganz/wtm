@@ -1,0 +1,75 @@
+{
+	"page_sub_title": "Some Content",
+	"page_title": "What it is",
+	"page_description_text": " A basic content template that forms the object model",
+	"template_id":"C01T",
+	
+	"SECTION_CONTENT_ZN_REDEFINES_CD": "1",	
+	
+	"SECTION_CONTENT_THREAD_ZN": [	
+		{
+			"link_idx": "1",
+			"page_link_data_id": "B01C01",			
+			"META_NOTE":"Introduction on Liberal Education-Angel falls page ",			
+			"page_next_page_present_ic": "0",
+			"page_tags": "",
+			"page_cross_links_idx":""
+			
+		}
+	
+		
+	],
+	
+	"cont_page_content_id":"A01C01",	
+	"cont_page_content_type_cd": "1",
+	"cont_page_notes_author":"admin",
+	"cont_page_notes_date":"01/01/2016",
+	"cont_page_notes_categories":"B01,B02",
+	"cont_page_content_text":"",
+	"cont_page_next_page_label":"more on this",
+	"cont_page_next_page_href":"",
+	
+	"SECTION_LINKS_ZN_REDEFINES_CD": "1",	
+	"section_list_heading": "Selected Blogs",		
+	"SECTION_LINKS_ZN": [
+		{
+			"link_idx": "?event=EV_DTL_SHORTCUT_C04T",
+			"link_data_id": "?event=EV_DTL_SHORTCUT_C04T",
+			"link_title": "Liberal Education and STEM",
+			"link_sub_title": "Courtersy-AACU",
+			"link_by": "Admin",
+			"link_date": "September 1, 2015"
+		}
+		
+	],
+	
+	
+	"SECTION_NEWS_ZN_REDEFINES_CD": "1",	
+	"SECTION_NEWS_ZN": [
+		{
+			"link_idx": "1",
+			"link_href": "home/MC01",
+			"link_title": "Liberal Education and STEM",
+			"link_sub_title": "Courtersy-AACU",
+			"link_by": "Admin",
+			"link_date": "September 1, 2015"
+		}
+	],
+	
+	
+	"SECTION_TAGS_ZN_REDEFINES_CD": "1",	
+	"SECTION_TAGS_ZN": [
+		{
+			"link_idx": "1",
+			"link_href": "home/MC01",
+			"link_title": "Liberal Education and STEM",
+			"link_sub_title": "Courtersy-AACU",
+			"link_by": "Admin",
+			"link_date": "September 1, 2015"
+		}
+	]
+	
+	
+	
+	
+}

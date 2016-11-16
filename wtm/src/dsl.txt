@@ -1,0 +1,220 @@
+v4 16/11/16
+
+
+Much of the classification of the previous part to be retained, but the classification of the template and content as independent
+entities or "collections" when housed in a json db is to be kept from legacy
+
+What is needed is the structure of templates would be like
+C01T, C02T which are simply the Layout Type with a running number and suffixed by T
+
+As for content it would be ; This would be a seperate collection
+A01C02 - which is a subject based classification, A01 being the subject code, and C is the reference to the template to which it is 
+designed to fit, and the Running number trails
+
+As for a third collection the meta of the content would be like A01C02_meta which would be a redefines of the CXT template it would 
+contain meta_information apart from the overriding of redefines. 
+
+The override codes for the meta is M for merge, S for supersede and blank/null for Inherit
+
+
+
+======================================
+
+Version 3 11/11/16
+
+Content should be prime, templates are just types of containers to hold them , the semantics are purely structural
+So template would just have single character which might be
+L - Main Menu
+M - Landing Page
+N - Sub landing page
+
+C - Basic 2 Col Content
+D - Simple Content
+E - Wrapper Page
+F - Multimedia Page
+G - Blog Page
+
+Content would have convention based on topics and subtopics based on domain, the semantics are functional
+Topic	Description	Subtopic	Description
+A	Intro	01	Home Overall
+		02	About
+		03	Contact
+		04	Home of Liberal Edu
+		05	Home of Blogs
+		06	Home of Involving people, projects
+		07	Home of acadamic resources
+			
+B	Idea	01	Lib Edu Intro for all
+		02	Schools point of view
+		03	Deep theory lib edu
+		04	Student and parent point of view
+		05	Arguments and Opinions
+		06	Related other ideas
+			
+C	Projects	01	For Schools
+		02	For parents
+			
+			
+			
+D	Blogs	01	Computing theory
+		02	Computing practical
+		03	Socioeconomics
+		04	opinions
+		05	Environment
+			
+E	acadamic	01	Physics
+		02	Maths
+		03	Education concepts
+			
+			
+F	Essays	01	Long essays on any topic
+
+
+Content Sancity code
+===============
+A - Keystone or Permenant
+B - Fragment Contextual( needs precedent to interpret)
+C - Regular Default
+D - Under editing
+E - Trending needs promotion 
+F - Minor Note
+
+
+Examples
+=======
+
+D02F01 -  Minor Note on computing practicals probably would not have its own template holder, but be picked up by some other
+CD02C11 - Template that holds a blog in practical computing including the meta data like date edited of the content and its related notes such as
+			the above mentioned example. It can have news links and links to other templates for query on "more on this".
+			It can contain list of topics that respond to 
+
+CX- Top level for all content screens
+			
+CD99 - It is the core format for the template, which can be overridden in case of wanting to give explicit links etc.
+		This minimizes work where we need a base page with links to promotional material and which can respond to next and next 
+		clicks simply showing D02C11 or D02C12 or D02C35
+
+
+CD02 - Next level to CD99 we would use a REDEFINES like mechanism to merge the json files. 
+
+CD02C11 - final level json obtained from the merge and ready for conversion to object and rendering.
+
+
+
+
+
+
+
+=====================================================================================================================
+
+Conventions
+
+Module-type 	Initial Letter		L for Landing, C for content display
+Module Number	Running  01-99
+Screen Number/Backend Command Number	01-99
+
+Commands
+=======
+Two letters for command abbrev LA for landing BG for blog
+Running number for Functions 01-99
+Suffix Type		T for backend command
+
+
+The commands are created to be like CX99T LX99T and BX99T to represent a template
+These are just content templates, the actual content would have a format as
+
+First single letter for functional module in the application, prefixed by the subsystem we are dealing with 
+WA01T, WB01T, WC01T, WC02T1 (last digit is the variant of the template, for instance in pagination).
+
+The actual content would be like WC0201 (instead of T[0-9] the content would be simple running numbers 0-99)
+
+Revised 11/11/16
+======================================================================
+Series 
+These appear as last but one digit of the name.
+C - Stands for Content
+T - Layout
+
+Template Layout Style
+==================== 
+Menu:
+L - Wizard Menu
+A - Landing Page 
+M - Sub Landing Page
+
+Content holders:
+C - Static Page 2 cols
+H - Very simple page.
+D - with comment panel and tag cloud for Blogs
+
+E - With suggestion links
+F - With rich streaming content.
+G - Interactive Content
+
+
+Running Content Naming
+===================
+Content/ Template Knowledge Domain Classification
+A - Core Ideas
+B - interfaces (Brouchure, faqs)
+C - Documentation (unopinonated. like contacts, acknowledgements)
+D - Blogs
+E - Other ideas, essays, articles, long blogs.
+F - Acadamic Notes
+G - Rich Content
+H - Dynamic Pick
+I - Limited Audience,Internal, Unedited.
+J - Promotional Content
+
+X - Exhaustive or wild card
+
+
+Degree of Importance, Changeability (For pages only)
+A - Keystone or Permenant
+B - Fragment Contextual, needs precedent to interpret
+C - Minor Note
+D - Under editing
+E - Trending needs promotion
+
+Common
+========
+
+Item Number 0-999
+
+Code on whether primarily template or content which controlls edit mode (whether as a 
+
+template or as a content)
+ C or T
+
+
+Pagination digit last 0-9
+
+
+
+
+
+Examples
+==========
+
+
+D47C1 -> A Blog with article number 47 editable as content file and pagination index 1
+
+BA1C-> A brouchure like content which is keystone to the site pagination index 0
+DE2C-> A promotional blog that needs to be trending.
+
+EB3C-> An extended in depth analysis that is in context with some core idea or faq
+
+ID1C-> Internal Blog (probably under editing)
+
+Template
+
+LB
+
+C01T-> A page template of static 2 col layout for hosting , template running number 01)
+D33T-> A template hosting blogs in static 2 col layout running number 33.
+
+
+
+
+
+

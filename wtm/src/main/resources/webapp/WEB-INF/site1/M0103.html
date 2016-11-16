@@ -142,7 +142,7 @@
 					</div>
  				<div id="pageId" th:utext="${message.page_id}"> 				
  				</div>
- 				<div th:utext="${message.contentObject.metaMap['contentid']}"></div>
+ 				
 				<div th:switch="${message.page_id}">
 					<a href="http://info.flagcounter.com/fhT3"><img src="http://s01.flagcounter.com/count2/fhT3/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></img></a>					
 				</div>
@@ -150,26 +150,22 @@
 				<div class="col-lg-7  col-md-8 col-sm-8 ">
 					<div class="container1" style="border-right-color: yellow;">
 						<div th:utext="${message.page_description_text}"></div>
-						<div th:utext="${message.page_content_text}"></div>
+						
 					</div>
 
-					<ul class="pager">
-						<li class="next"><a th:href="${message.list_pagination_link}" style="background-color: gold;">
-								<div th:utext="${message.list_pagination_txt}"></div>
-						</a></li>
-					</ul>
+				
 					<!-- Main Content -->
 					<div class="container1">
-						<hr></hr>
+						
 						<h2>
 							
 						</h2>
 						<hr></hr>
-						<div class="row1" th:each="link : ${message.SECTION_LINKS_ZN}">
+						<div class="row1" th:each="link : ${message.SECTION_OVV_ZN}" >
 
 							<div class="post-preview">
 								<a th:href="${link.link_id}">
-									<h3 th:text="${link.link_title}"></h3>
+									<h3 th:text="${link.link_title}" style="font-weight: bold;color: #337ab7;"></h3>
 									<h4 class="post-subtitle" th:text="${link.link_sub_title}"></h4>
 								</a>
 								<p class="post-meta">
@@ -183,7 +179,11 @@
 
 							</div>
 						</div>
-
+						<ul class="pager">
+							<li class="next"><a th:href="${message.list_pagination_link}" style="background-color: gold;">
+								<div th:utext="${message.list_pagination_txt}"></div>
+							</a></li>
+						</ul>
 
 					</div>
 				</div>

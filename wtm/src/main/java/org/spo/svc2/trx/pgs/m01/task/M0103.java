@@ -6,17 +6,17 @@ import org.spo.cms2.svc.PageService;
 import org.spo.ifs2.dsl.controller.NavEvent;
 import org.spo.ifs2.dsl.controller.TrxInfo;
 import org.spo.ifs2.dsl.model.AbstractTask;
-import org.spo.svc2.trx.pgs.c01.cmd.CX99Connector;
-import org.spo.svc2.trx.pgs.c01.cmd.CX99T;
 import org.spo.svc2.trx.pgs.m01.cmd.LA99T;
+import org.spo.svc2.trx.pgs.m01.cmd.LB99T;
 import org.spo.svc2.trx.pgs.m01.handler.M01Handler;
+import org.spo.svc2.trx.pgs.mc.cmd.PostContent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 @Component
-public class M0102 extends AbstractTask {
+public class M0103 extends AbstractTask {
 
 	@Autowired
 	public PageService svc ;
@@ -29,27 +29,25 @@ public class M0102 extends AbstractTask {
 	public NavEvent initTask(String dataId, TrxInfo info) throws Exception {
 
 
-		String contentId= dataId;
+		String dataId_Content= dataId;//Here dataId represents the template incoming because it is mostly a set of links in this page wiht a small intro
 		String response="";
 		String response_content="";
 
-		response = svc.readUpPage("templates", contentId);
-
-		String dataId_Content="" ;
-		if(dataId.equals("LB01T")){
-			//regular Menu can be mapped with A01T content
-			dataId_Content = "BA01T";
-		}
-
-		response_content = svc.readUpPage("templates", dataId_Content);
-
+		response = svc.readUpPage("templates", "LA01T");//Menu
+		Gson gson = new Gson();
+		
+		Type typ = new TypeToken<LA99T>(){}.getType();//FIXME right now only string works
+		LA99T cmd_menu= gson.fromJson(response,typ);	
+		
 		try{
-			Gson gson = new Gson();
-			Type typ = new TypeToken<LA99T>(){}.getType();//FIXME right now only string works
-			LA99T cmd_menu= gson.fromJson(response,typ);		
-
-			CX99T cmd= new CX99Connector().prepareContent(svc,dataId_Content);		
+		
 			
+		
+			response_content = svc.readUpPage("templates", dataId_Content);
+
+
+			typ = new TypeToken<LB99T>(){}.getType();//FIXME right now only string works
+			LB99T cmd= gson.fromJson(response_content,typ);		
 			
 			info.addToModelMap("menu",cmd_menu);
 			info.addToModelMap("message",cmd);
@@ -60,7 +58,7 @@ public class M0102 extends AbstractTask {
 			e.printStackTrace();
 		}
 
-		return M01Handler.EV_INIT_02;
+		return M01Handler.EV_INIT_03;
 	
 	}
 
