@@ -3,8 +3,8 @@ package org.spo.svc2.trx.pgs.c01.handler;
 import org.spo.ifs2.dsl.controller.AbstractHandler;
 import org.spo.ifs2.dsl.controller.DSLConstants.EventType;
 import org.spo.ifs2.dsl.controller.NavEvent;
-import org.spo.svc2.trx.pgs.c01.task.C0101;
 import org.spo.svc2.trx.pgs.c01.task.C0102;
+import org.spo.svc2.trx.pgs.c01.task.C0101;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -20,9 +20,10 @@ public class C01Handler extends AbstractHandler{
    C0102 c0102;
    
    public static final NavEvent EV_INIT_01 =  NavEvent.create(EventType.REFRESHPAGE);
-   public static final NavEvent EV_INIT_02 =  NavEvent.create(EventType.REFRESHPAGE, "m01/M0102");
+   public static final NavEvent EV_INIT_02 =  NavEvent.create(EventType.REFRESHPAGE, "c01/C0102");
    public static final NavEvent EV_SWITCH_TO_DTL =  NavEvent.create(EventType.TASKSET, "02");
    public static final NavEvent EV_REFRESH_CONTENT =  NavEvent.create(EventType.TASKSET, "01");
+   public static final NavEvent EV_REFRESH_NEW_SUB_LAND =  NavEvent.create(EventType.TRXSWITCH, "C01");
    public static final NavEvent EV_SWITCH_TO_OVV =  NavEvent.create(EventType.TRXSWITCH, "M01");
   
   

@@ -6,8 +6,8 @@ import org.spo.cms2.svc.PageService;
 import org.spo.ifs2.dsl.controller.NavEvent;
 import org.spo.ifs2.dsl.controller.TrxInfo;
 import org.spo.ifs2.dsl.model.AbstractTask;
+import org.spo.svc2.trx.pgs.c01.cmd.LB99T;
 import org.spo.svc2.trx.pgs.m01.cmd.LA99T;
-import org.spo.svc2.trx.pgs.m01.cmd.LB99T;
 import org.spo.svc2.trx.pgs.m01.handler.M01Handler;
 import org.spo.svc2.trx.pgs.mc.cmd.PostContent;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -71,7 +71,7 @@ public class M0103 extends AbstractTask {
 			return navEvent;
 		}else if(event.startsWith("EV_SUB_LAND")){
 			String dataId = event.replaceAll("EV_SUB_LAND_","");
-			NavEvent navEvent = M01Handler.EV_SWITCH_TO_SUB_LAND;
+			NavEvent navEvent = M01Handler.EV_SWITCH_SUB_LAND;
 			navEvent.dataId=dataId;
 			return navEvent;
 		}else if(event.startsWith("EV_SHORTCUT")){

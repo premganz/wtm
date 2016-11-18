@@ -73,7 +73,7 @@ public class M0102 extends AbstractTask {
 			return navEvent;
 		}else if(event.startsWith("EV_SUB_LAND")){
 			String dataId = event.replaceAll("EV_SUB_LAND_","");
-			NavEvent navEvent = M01Handler.EV_SWITCH_TO_SUB_LAND;
+			NavEvent navEvent = M01Handler.EV_SWITCH_SUB_LAND;
 			navEvent.dataId=dataId;
 			return navEvent;
 		}else if(event.startsWith("EV_SHORTCUT")){

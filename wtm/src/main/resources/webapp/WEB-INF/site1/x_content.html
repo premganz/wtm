@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>x_content</title>
+<title>x_content_local</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://tinymce.cachefly.net/4.2/tinymce.min.js"></script>
 <script type="text/javascript">
@@ -117,7 +117,8 @@
 							</p>
 							 <h5><div th:utext="${content.formErrors}"></div></h5>
 							
-								<p>FileName : <input id="fileName" th:name="input" th:field="${content.id}" maxlength="100" />Meta : <input id="fileMeta" th:name="input" th:field="*{content.meta}" maxlength="500" /></p>
+								<p>FileName : <input id="fileName" th:name="input" th:field="${content.id}" maxlength="300" /></p>
+								<p>Meta : <input id="fileMeta" th:name="input" th:field="*{content.meta}" maxlength="500" size="140" /></p>
 																					
 						</td>
 						<td><br></br> <button  id="fetch" onClick="loadContent()">Post</button></td>

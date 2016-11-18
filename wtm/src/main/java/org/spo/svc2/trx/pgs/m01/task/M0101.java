@@ -43,10 +43,9 @@ public class M0101 extends AbstractTask {
 
 		String dataId_Content="" ;
 			//regular Menu can be mapped with A01T content
-			dataId_Content = dataId;
+			dataId_Content = dataId+"_1";
 
-		//The template id's data file.
-		response_content = svc.readUpPage("templates", dataId_Content);
+	
 
 		try{
 			Gson gson = new Gson();
@@ -78,7 +77,7 @@ public class M0101 extends AbstractTask {
 			return navEvent;
 		}else if(event.startsWith("EV_SUB_LAND")){
 			String dataId = event.replaceAll("EV_SUB_LAND_","");
-			NavEvent navEvent = M01Handler.EV_SWITCH_TO_SUB_LAND;
+			NavEvent navEvent = M01Handler.EV_SWITCH_SUB_LAND;
 			navEvent.dataId=dataId;
 			return navEvent;
 		}else if(event.startsWith("EV_SHORTCUT")){

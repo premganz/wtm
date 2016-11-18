@@ -36,7 +36,9 @@ G - Blog Page
 
 Content would have convention based on topics and subtopics based on domain, the semantics are functional
 Topic	Description	Subtopic	Description
-A	Intro	01	Home Overall
+
+
+A	HOMES	01	Home Overall
 		02	About
 		03	Contact
 		04	Home of Liberal Edu
@@ -44,31 +46,36 @@ A	Intro	01	Home Overall
 		06	Home of Involving people, projects
 		07	Home of acadamic resources
 			
-B	Idea	01	Lib Edu Intro for all
-		02	Schools point of view
-		03	Deep theory lib edu
-		04	Student and parent point of view
-		05	Arguments and Opinions
-		06	Related other ideas
-			
-C	Projects	01	For Schools
-		02	For parents
+B	LIBEDU		01	Idea Practical
+				02	Convincing Essays
+				03	Deep Theory
+				04  Light Arguments and Opinions
+				05	Related other ideas
 			
 			
+C	PRACTICAL	01 Normal
+				02 Promotional
 			
-D	Blogs	01	Computing theory
-		02	Computing practical
-		03	Socioeconomics
-		04	opinions
-		05	Environment
 			
-E	acadamic	01	Physics
+			
+D	BLOGS		01	Computing theory
+			02	Computing practical
+			03	Socioeconomics
+			04	opinions
+			05	Environment
+			
+E	ACADAMIC	01	Physics
 		02	Maths
 		03	Education concepts
 			
 			
-F	Essays	01	Long essays on any topic
+F	ESSAYS	01	Long essays on any topic
 
+G   Meta
+
+H  Draft
+
+I Fragment for use in overviews
 
 Content Sancity code
 ===============

@@ -1,4 +1,4 @@
-package org.spo.svc2.trx.pgs.m01.cmd;
+package org.spo.svc2.trx.pgs.c01.cmd;
 
 public class LB99T
 {
@@ -8,13 +8,13 @@ public class LB99T
 
     private String section_list_heading;
 
-    private SECTION_TAGS_ZN[] SECTION_TAGS_ZN;
+    private SECTION_LAND_TAGS_ZN[] SECTION_LAND_TAGS_ZN;
 
     private SECTION_OVV_ZN[] SECTION_OVV_ZN;
 
     private String page_sub_title;
 
-    private SECTION_NEWS_ZN[] SECTION_NEWS_ZN;
+    private SECTION_LAND_NEWS_ZN[] SECTION_LAND_NEWS_ZN;
 
     private String page_id;
 
@@ -58,14 +58,14 @@ public class LB99T
         this.section_list_heading = section_list_heading;
     }
 
-    public SECTION_TAGS_ZN[] getSECTION_TAGS_ZN ()
+    public SECTION_LAND_TAGS_ZN[] getSECTION_LAND_TAGS_ZN ()
     {
-        return SECTION_TAGS_ZN;
+        return SECTION_LAND_TAGS_ZN;
     }
 
-    public void setSECTION_TAGS_ZN (SECTION_TAGS_ZN[] SECTION_TAGS_ZN)
+    public void setSECTION_LAND_TAGS_ZN (SECTION_LAND_TAGS_ZN[] SECTION_LAND_TAGS_ZN)
     {
-        this.SECTION_TAGS_ZN = SECTION_TAGS_ZN;
+        this.SECTION_LAND_TAGS_ZN = SECTION_LAND_TAGS_ZN;
     }
 
     public SECTION_OVV_ZN[] getSECTION_OVV_ZN ()
@@ -88,14 +88,14 @@ public class LB99T
         this.page_sub_title = page_sub_title;
     }
 
-    public SECTION_NEWS_ZN[] getSECTION_NEWS_ZN ()
+    public SECTION_LAND_NEWS_ZN[] getSECTION_LAND_NEWS_ZN ()
     {
-        return SECTION_NEWS_ZN;
+        return SECTION_LAND_NEWS_ZN;
     }
 
-    public void setSECTION_NEWS_ZN (SECTION_NEWS_ZN[] SECTION_NEWS_ZN)
+    public void setSECTION_LAND_NEWS_ZN (SECTION_LAND_NEWS_ZN[] SECTION_LAND_NEWS_ZN)
     {
-        this.SECTION_NEWS_ZN = SECTION_NEWS_ZN;
+        this.SECTION_LAND_NEWS_ZN = SECTION_LAND_NEWS_ZN;
     }
 
     public String getPage_id ()
@@ -161,13 +161,13 @@ public class LB99T
     @Override
     public String toString()
     {
-        return "ClassPojo [SECTION_TRENDING_ZN = "+SECTION_TRENDING_ZN+", list_pagination_link = "+list_pagination_link+", section_list_heading = "+section_list_heading+", SECTION_TAGS_ZN = "+SECTION_TAGS_ZN+", SECTION_OVV_ZN = "+SECTION_OVV_ZN+", page_sub_title = "+page_sub_title+", SECTION_NEWS_ZN = "+SECTION_NEWS_ZN+", page_id = "+page_id+", list_pagination_txt = "+list_pagination_txt+", page_description_text = "+page_description_text+", list_pagination_ic = "+list_pagination_ic+", page_intro_note = "+page_intro_note+", page_title = "+page_title+"]";
+        return "ClassPojo [SECTION_TRENDING_ZN = "+SECTION_TRENDING_ZN+", list_pagination_link = "+list_pagination_link+", section_list_heading = "+section_list_heading+", SECTION_LAND_TAGS_ZN = "+SECTION_LAND_TAGS_ZN+", SECTION_OVV_ZN = "+SECTION_OVV_ZN+", page_sub_title = "+page_sub_title+", SECTION_LAND_NEWS_ZN = "+SECTION_LAND_NEWS_ZN+", page_id = "+page_id+", list_pagination_txt = "+list_pagination_txt+", page_description_text = "+page_description_text+", list_pagination_ic = "+list_pagination_ic+", page_intro_note = "+page_intro_note+", page_title = "+page_title+"]";
     }
     
        
 }
 
-class SECTION_TAGS_ZN
+class SECTION_LAND_TAGS_ZN
 {
     private String link_href;
 
@@ -271,7 +271,7 @@ class SECTION_TRENDING_ZN
 }
 			
 
-class SECTION_NEWS_ZN
+class SECTION_LAND_NEWS_ZN
 {
    private String link_href;
 
