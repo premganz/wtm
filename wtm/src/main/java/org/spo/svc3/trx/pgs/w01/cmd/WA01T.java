@@ -1,6 +1,6 @@
 package org.spo.svc3.trx.pgs.w01.cmd;
 
-public class WA01T extends CommonTemplate
+public class WA01T 
 {
 	private String list_pagination_link;
 
