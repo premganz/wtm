@@ -29,13 +29,19 @@
 		</repository>
 	</repositories>
 	<dependencies>
-
 		<dependency>
 			<groupId>com.github.premganz</groupId>
 			<artifactId>bg3</artifactId>
-			<version>v1.5.3</version>
+			<version>1.6.0</version>
 		</dependency>
+<!-- 
+		<dependency>
+			<groupId>com.github.premganz</groupId>
+			<artifactId>bg3</artifactId>
+			<version>v1.4.9</version>
+		</dependency>-->
 	</dependencies>
+
 
 	<build>
 
