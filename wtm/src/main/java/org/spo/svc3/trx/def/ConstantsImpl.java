@@ -7,7 +7,7 @@ public class ConstantsImpl implements Constants {
 
 	public String getRepoPath() {
 		if(!System.getProperty("os.name").startsWith("Windows")){
-			return "/usr/local/share/data-cms/wtm";
+			return "/home/kv/Documents/lc/data-cms/lc/";
 		}else{
 			return "C:\\Users\\premganesh\\git\\bg2\\src\\main\\resources\\data-cms";
 		}
