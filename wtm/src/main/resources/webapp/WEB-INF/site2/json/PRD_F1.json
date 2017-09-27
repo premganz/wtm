@@ -1,0 +1,42 @@
+{	
+	"prd_desc_zn":{
+		
+			"prd_gen_nm":"",
+			"prd_alt_nm":"",
+			"prd_desc":"",
+			"prd_bran_nm":"",
+			"prd_usg_nm_lst_1":"",
+			"prd_usg_nm_lst_2":"",
+			"prd_usg_nm_lst_3":"",
+			"prd_var_nm_lst_1":"",
+			"prd_var_nm_lst_2":"",
+			"prd_var_nm_lst_3":"",
+			"prd_var_nm_lst_4":"",
+			
+			"prd_pack_type_lst_1_pack_typ_nm":"",
+			"prd_pack_type_lst_1_pack_typ_qtt":"",
+			"prd_pack_type_lst_1_pack_prc":"",
+			"prd_pack_type_lst_1_pack_new_prc_from":"",
+			
+			"prd_pack_type_lst_2_pack_typ_nm":"",
+			"prd_pack_type_lst_2_pack_typ_qtt":"",
+			"prd_pack_type_lst_2_pack_prc":"",
+			"prd_pack_type_lst_2_pack_new_prc_from":"",
+			
+			"prd_pack_type_lst_3_pack_typ_nm":"",
+			"prd_pack_type_lst_3_pack_typ_qtt":"",
+			"prd_pack_type_lst_3_pack_prc":"",
+			"prd_pack_type_lst_3_pack_new_prc_from":"",
+			
+			"prd_pack_type_lst_4_pack_typ_nm":"",
+			"prd_pack_type_lst_4_pack_typ_qtt":"",
+			"prd_pack_type_lst_4_pack_prc":"",
+			"prd_pack_type_lst_4_pack_new_prc_from":"",
+	
+	
+			"prd_act_ic":"",
+			"prd_end_dt":""
+					
+	}
+		
+	}

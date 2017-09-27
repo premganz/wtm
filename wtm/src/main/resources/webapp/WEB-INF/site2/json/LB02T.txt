@@ -1,0 +1,59 @@
+{
+	"page_sub_title": "Links on the Idea of Liberal Education",
+	"page_title": "Blogs",
+	"page_description_text": "<h3>What is Liberal Education.",	
+	"page_intro_note": "C01C01",
+	"page_id": "LB01T",	
+	"section_list_heading": "Selected Blogs",	
+	"list_pagination_ic": "1",
+	"list_pagination_txt": "Next Page",
+	"list_pagination_link": "LB01T1",	
+	"SECTION_OVV_ZN": [
+		{
+			"link_id": "home/MC01",
+			"link_title": "Liberal Education and STEM",
+			"link_sub_title": "Courtersy-AACU",
+			"link_by": "Admin",
+			"link_date": "September 1, 2015"
+		},
+		{
+			"link_id": "home/B02",
+			"link_title": "Education for peace",
+			"link_sub_title": "making a global citizen",
+			"link_by": "Admin",
+			"link_date": "September 1, 2015"
+		},
+		{
+			"link_id": "home/C03",
+			"link_title": "A Fine balance of running an education institution",
+			"link_sub_title": "Acadamic engagement vs Measurable Outcomes",
+			"link_by": "Admin",
+			"link_date": "October 1, 2015"
+		}
+	],
+	"SECTION_NEWS_ZN": [
+		{
+			"link_href": "home/MC01",
+			"link_title": "Liberal Education and STEM",
+			"link_sub_title": "Courtersy-AACU",
+			"link_by": "Admin",
+			"link_date": "September 1, 2015"
+		}
+	],
+	"SECTION_TRENDING_ZN": [
+		{
+			"link_href": "home/MC01",
+			"link_title": "Liberal Education and STEM",
+			"link_sub_title": "Courtersy-AACU",
+			"link_by": "Admin",
+			"link_date": "September 1, 2015"
+		}
+	],
+	"SECTION_TAGS_ZN": [
+		{
+			"link_href": "home/MC01",
+			"link_title": "Liberal Education and STEM"
+			
+		}
+	]
+}

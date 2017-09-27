@@ -9,10 +9,9 @@ import org.spo.cms3.svc.SocketConnector;
 import org.spo.ifs3.dsl.controller.NavEvent;
 import org.spo.ifs3.dsl.controller.TrxInfo;
 import org.spo.ifs3.dsl.model.AbstractTask;
-import org.spo.svc3.trx.pgs.m99.cmd.LA01T;
+import org.spo.svc3.trx.pgs.w01.form.PrdForm01;
 import org.spo.svc3.trx.pgs.w01.handler.W01Handler;
-import org.spo.svc3.trxdemo.pgs.c01.cmd.CA01T;
-import org.spo.svc3.trxdemo.pgs.mc.cmd.PostContent;
+import org.spo.svc3.trx.pgs.w01.model.Prd;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -50,25 +49,10 @@ public class W0101 extends AbstractTask {
 
 		try{
 			Gson gson = new Gson();
-			Type typ = new TypeToken<LA01T>(){}.getType();//FIXME right now only string works
-			LA01T cmd_menu= gson.fromJson(response,typ);		
-
-			typ = new TypeToken<CA01T>(){}.getType();//FIXME right now only string works
-			CA01T cmd= gson.fromJson(response_content,typ);		
-			if(cmd.getPage_content_type_cd().equals("1")){
-				String contentId1 = cmd.getPage_content_text();
-				response = svc.readUpPage("posts", contentId1);
-				String response_meta = svc.readUpPage("posts", contentId1+"_meta");
-				response=response.equals("")?"<p>blank reply</p>":response;				
-				cmd.setPage_content_text(response);	
-				PostContent contentObj = new PostContent();
-				contentObj.setHtmlContent(response);
-				contentObj.setMeta(response_meta);
-				cmd.setPage_content_meta(response_meta);
-				cmd.setContentObject(contentObj);
-			}
-			info.addToModelMap("menu",cmd_menu);
-			info.addToModelMap("message",cmd);
+			Type typ = new TypeToken<Prd>(){}.getType();//FIXME right now only string works
+			Prd cmd= gson.fromJson(response_content,typ);		
+			info.addToModelMap("prd",cmd);
+			info.addToModelMap("prdForm",new PrdForm01());	
 			System.out.println(cmd.toString());
 
 		}catch(Exception e){
@@ -80,7 +64,20 @@ public class W0101 extends AbstractTask {
 	}
 
 	@Override
-	public NavEvent processViewEvent(String event, TrxInfo info) {	return W01Handler.EV_INIT_01;
+	public NavEvent processViewEvent(String event, TrxInfo info) {	
+		if(event.startsWith("EV_DTL")){
+			String dataId = event.replaceAll("EV_DTL_","");
+			NavEvent navEvent = W01Handler.EV_NEXT_SCREEN;
+			navEvent.dataId="W02";
+			return navEvent;
+		}
+		if(event.startsWith("EV_FLT")){
+			String dataId = event.replaceAll("EV_FLT_","");
+			NavEvent navEvent = W01Handler.EV_INIT_01;
+			navEvent.dataId="W02";
+			return navEvent;
+		}
+		return W01Handler.EV_INIT_01;
 	}
 
 	@Override
