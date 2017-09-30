@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="index, follow"/>
+    <title>Product Manage</title>
+
+    <!-- Essential styles -->
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css" type="text/css"/> 
+    <link rel="stylesheet" href="../../assets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen"/> 
+     
+    <!-- Boomerang styles -->
+        <link id="wpStylesheet" type="text/css" href="../../css/global-style.css" rel="stylesheet" media="screen"/>
+        
+
+    <!-- Favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/png"/>
+
+    <!-- Assets -->
+    <link rel="stylesheet" href="../../assets/owl-carousel/owl.carousel.css"/>
+    <link rel="stylesheet" href="../../assets/owl-carousel/owl.theme.css"/>
+    <link rel="stylesheet" href="../../assets/sky-forms/css/sky-forms.css"/>    
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="../../assets/sky-forms/css/sky-forms-ie8.css">
+    <![endif]-->
+
+    <!-- Required JS -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    
+
+    <!-- Page scripts -->
+    
+</head>
+<body>
+<!-- MODALS -->
+ <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script>
+
+var mockDataForThisTest = "json=" + encodeURI(JSON.stringify([
+   {
+      id: 1,
+      firstName: "Peter",
+         lastName: "Jhons"},
+        {
+         id: 2,
+         firstName: "David",
+          lastName: "Bowie"}
+            ]));
+
+
+   var app = angular.module('myApp', []);
+
+    function PeopleCtrl($scope, $http) {
+
+     $scope.people = [];
+
+      $scope.loadPeople = function() {
+       var httpRequest = $http({
+        method: 'GET',
+       url: '/ajax/test',
+        data: mockDataForThisTest
+
+         }).success(function(data, status) {
+          $scope.people = data;
+           });
+
+         };
+
+          }
+
+</script>
+
+<div ng-app="myApp" ng-controller="myCtrl1"> 
+
+<p>Today's welcome message is:</p>
+<h1>{{myWelcome}}</h1>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl1', function($scope, $http) {
+    $http.get("/ajax/test")
+    .then(function(response) {
+        $scope.myWelcome = response.data;
+    });
+});
+</script>
+
+<div ng-app="myApp">
+    <div ng-controller="PeopleCtrl">
+        <p>Click <a ng-click="loadPeople()">here</a> to load data.</p>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            <tr ng-repeat="person in people">
+                <td>{{person.id}}</td>
+                <td>{{person.firstName}}</td>
+                <td>{{person.lastName}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+            
+    <!-- MAIN CONTENT -->
+        <div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Shop</h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li class="active">Product list</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="slice bg-white">
+        <div class="wp-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="sidebar">
+    <div class="panel panel-default panel-sidebar-1">
+        <div class="panel-heading"><h2>Filter by</h2></div>
+        <div class="panel-body">
+            <h4>Category</h4>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="?event=EV_PVS_01">Laptops</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="">Tablets</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="">Phones</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="">Mice</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="">Cameras</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="">Home Cinemas</a>
+                </li>
+            </ul>
+
+            <h4>Manufacturer</h4>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="">Laptops</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="">Tablets</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="">Phones</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="">Mice</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="">Cameras</a>
+                </li>
+                <li class="list-group-item">
+                    <span class="badge base">14</span>
+                    <a href="">Home Cinemas</a>
+                </li>
+            </ul>
+
+            <h4>Color</h4>
+            <span class="color-switch">
+                <a href="#" id="cmdRed" class="color-red" title="Red">Red</a>
+                <a href="#" id="cmdViolet" class="color-violet" title="Violet">Violet</a>
+                <a href="#" id="cmdBlue" class="color-blue" title="Blue">Blue</a>
+                <a href="#" id="cmdGreen" class="color-green" title="Green">Green</a>
+                <a href="#" id="cmdYellow" class="color-yellow" title="Yellow">Yellow</a>
+                <a href="#" id="cmdOrange" class="color-orange" title="Orange">Orange</a>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default panel-sidebar-1">
+        <div class="panel-heading"><h2>Advanced search</h2></div>
+        <div class="panel-body">
+            <form class="form-light" role="form">
+                <div class="form-group">
+                <label>Search for products</label>
+                <input type="text" class="form-control" placeholder="I want to find..."/>
+                </div>
+                <div class="form-group">
+                <label>Category</label>
+                <select class="form-control">
+                    <option>Phones</option>
+                    <option>Laptops</option>
+                    <option>Cameras</option>
+                    <option>Tablets</option>
+                </select>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"/> Display all
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-base">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="panel panel-default panel-sidebar-1">
+        <div class="panel-heading"><h2>Recently viewed</h2></div>
+        <div class="panel-body">
+            <ul class="featured">
+                <li>
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <img src="images/prv/product-2.jpg" alt="" class="pull-left"/>
+                        </div>
+                        <div class="feature-item-info">
+                            <h3 class="title">
+                                <a href="#">Samsung Galaxy S4</a>
+                            </h3>
+                            <div class="rating">
+                                <span class="star voted" rel="1"></span>
+                                <span class="star voted" rel="2"></span>
+                                <span class="star voted" rel="3"></span>
+                                <span class="star" rel="4"></span>
+                                <span class="star" rel="5"></span>
+                            </div>
+                            <div class="price-wr">
+                                <span class="price discount">$300.99</span>
+                                <span class="price">$233.89</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <img src="images/prv/product-3.jpg" alt="" class="pull-left"/>
+                        </div>
+                        <div class="feature-item-info">
+                            <h3 class="title">
+                                <a href="#">Asus Ultra Notebook</a>
+                            </h3>
+                            <div class="rating">
+                                <span class="star voted" rel="1"></span>
+                                <span class="star voted" rel="2"></span>
+                                <span class="star voted" rel="3"></span>
+                                <span class="star" rel="4"></span>
+                                <span class="star" rel="5"></span>
+                            </div>
+                            <div class="price-wr">
+                                <span class="price discount">$300.99</span>
+                                <span class="price">$233.89</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="featured-item">
+                        <div class="featured-item-img">
+                            <img src="images/prv/product-4.jpg" alt="" class="pull-left"/>
+                        </div>
+                        <div class="feature-item-info">
+                            <h3 class="title">
+                                <a href="#">PC Mouse Microsoft</a>
+                            </h3>
+                            <div class="rating">
+                                <span class="star voted" rel="1"></span>
+                                <span class="star voted" rel="2"></span>
+                                <span class="star voted" rel="3"></span>
+                                <span class="star" rel="4"></span>
+                                <span class="star" rel="5"></span>
+                            </div>
+                            <div class="price-wr">
+                                <span class="price discount">$300.99</span>
+                                <span class="price">$233.89</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <!-- Product list sort events -->
+                            <div class="col-md-12">
+                                <div class="wp-block default product-list-filters light-gray">
+                                    <span class="view-mode hidden-xs hidden-sm">
+                                        <a href="">
+                                            <i class="fa fa-th"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa fa-bars"></i>
+                                        </a>
+                                    </span>
+                                    <div class="filter sort-filter">
+                                        <div class="form-inline form-light">
+                                            <label>Sort by</label>
+                                            <a href="">
+                                                <i class="fa fa-arrow-down"></i>
+                                            </a>
+                                            <select class="form-control">
+                                                <option>Price</option>
+                                                <option>Most bought</option>
+                                                <option>Most reviewed</option>
+                                            </select>
+                                            
+                                            <label>Items</label>
+                                            <select class="form-control">
+                                                <option>10</option>
+                                                <option>50</option>
+                                                <option>100</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <ul class="pagination pagination">
+                                        <li><a href="#">«</a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">»</a></li>
+                                    </ul>
+                                </div>
+                            </div>  
+
+                            <!-- Product list -->
+                            <div class="col-md-4">
+                                <div class="wp-block product">
+                                    <figure>
+                                        <img alt="" src="images/prv/product-1.jpg" class="img-responsive img-center"/>
+                                    </figure>
+                                    <h2 class="product-title"><a href="">Nikon Coolpix L320</a></h2>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                                    </p>
+                                    <div class="wp-block-footer">
+                                        <span class="price pull-left">RON 233.33</span>
+                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                            <span>Add to cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="wp-block product">
+                                    <figure>
+                                        <img alt="" src="images/prv/product-2.jpg" class="img-responsive img-center"/>
+                                        <div class="ribbon base">Blue ribbon</div>
+                                    </figure>
+                                    <h2 class="product-title"><a href="">Samsung Galaxy S4</a></h2>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                                    </p>
+                                    <div class="wp-block-footer">
+                                        <span class="price pull-left">RON 233.33</span>
+                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                            <span>Add to cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="wp-block product">
+                                    <figure>
+                                        <img alt="" src="images/prv/product-3.jpg" class="img-responsive img-center"/>
+                                        <span class="ribbon base-alt">Green ribbon</span>
+                                    </figure>
+                                    <h2 class="product-title"><a href="">Asus Ultra Notebook</a></h2>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                                    </p>
+                                    <div class="wp-block-footer">
+                                        <span class="price pull-left">RON 233.33</span>
+                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                            <span>Add to cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="wp-block product">
+                                    <figure>
+                                        <img alt="" src="images/prv/product-1.jpg" class="img-responsive img-center"/>
+                                        <span class="ribbon red">Red ribbon</span>
+                                    </figure>
+                                    <h2 class="product-title"><a href="">Nikon Coolpix L320</a></h2>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                                    </p>
+                                    <div class="wp-block-footer">
+                                        <span class="price pull-left">RON 233.33</span>
+                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                            <span>Add to cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="wp-block product">
+                                    <figure>
+                                        <img alt="" src="images/prv/product-2.jpg" class="img-responsive img-center"/>
+                                    </figure>
+                                    <h2 class="product-title"><a href="">Samsung Galaxy S4</a></h2>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                                    </p>
+                                    <div class="wp-block-footer">
+                                        <span class="price pull-left">RON 233.33</span>
+                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                            <span>Add to cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="wp-block product">
+                                    <figure>
+                                        <img alt="" src="images/prv/product-3.jpg" class="img-responsive img-center"/>
+                                    </figure>
+                                    <h2 class="product-title"><a href="">Asus Ultra Notebook</a></h2>
+                                    <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
+                                    </p>
+                                    <div class="wp-block-footer">
+                                        <span class="price pull-left">RON 233.33</span>
+                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
+                                            <span>Add to cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="col">
+                       <h4>Contact us</h4>
+                       <ul>
+                            <li>5th Avenue, New York - United States</li>
+                            <li>Phone: +10 724 1234 567 | Fax: +10 724 1234 567 </li>
+                            <li>Email: <a href="mailto:hello@example.com" title="Email Us">hello@example.com</a></li>
+                            <li>Skype: <a href="skype:my.business?call" title="Skype us">my-business</a></li>
+                            <li>Creating great templates is our passion</li>
+                        </ul>
+                     </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="col">
+                        <h4>Mailing list</h4>
+                        <p>Sign up if you would like to receive occasional treats from us.</p>
+                        <form class="form-horizontal form-light">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Your email address..."/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-base" type="button">Go!</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="col col-social-icons">
+                        <h4>Follow us</h4>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-skype"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-flickr"></i></a>
+                    </div>
+                </div>
+
+                 <div class="col-md-3">
+                    <div class="col">
+                        <h4>About us</h4>
+                        <p class="no-margin">
+                        Boomerang MultiPurpose Template is a multi-solution product made with simplicity in mind so you can benefit as much as possible from it.
+                        <br></br>
+                        <a href="#" class="btn btn-block btn-base btn-icon fa-check"><span>Try it now</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr></hr>
+            
+            <div class="row">
+                <div class="col-lg-9 copyright">
+                    2014 © Web Pixels. All rights reserved.
+                    <a href="#">Terms and conditions</a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="http://www.webpixels.ro" title="Made with love by Web Pixels" target="_blank" class="">
+                        <img src="images/webpixels-footer-logo.png" alt="Web Pixels - Designing Forward | Logo" class="pull-right"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Essentials -->
+<script src="../../js/modernizr.custom.js"></script>
+<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="../../js/jquery.easing.js"></script>
+<script src="../../js/jquery.metadata.js"></script>
+<script src="../../js/jquery.hoverup.js"></script>
+<script src="../../js/jquery.hoverdir.js"></script>
+<script src="../../js/jquery.stellar.js"></script>
+
+<!-- Vinay mobile nav - Optional  -->
+<script src="../../assets/responsive-mobile-nav/js/jquery.dlmenu.js"></script>
+<script src="../../assets/responsive-mobile-nav/js/jquery.dlmenu.autofill.js"></script>
+
+<!-- Forms -->
+<script src="../../assets/ui-kit/js/jquery.powerful-placeholder.min.js"></script> 
+<script src="../../assets/ui-kit/js/cusel.min.js"></script>
+<script src="../../assets/sky-forms/js/jquery.form.min.js"></script>
+<script src="../../assets/sky-forms/js/jquery.validate.min.js"></script>
+<script src="../../assets/sky-forms/js/jquery.maskedinput.min.js"></script>
+<script src="../../assets/sky-forms/js/jquery.modal.js"></script>
+
+<!-- Assets -->
+<script src="../../assets/hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+<script src="../../assets/page-scroller/jquery.ui.totop.min.js"></script>
+<script src="../../assets/mixitup/jquery.mixitup.js"></script>
+<script src="../../assets/mixitup/jquery.mixitup.init.js"></script>
+<script src="../../assets/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script src="../../assets/waypoints/waypoints.min.js"></script>
+<script src="../../assets/milestone-counter/jquery.countTo.js"></script>
+<script src="../../assets/easy-pie-chart/js/jquery.easypiechart.js"></script>
+<script src="../../assets/social-buttons/js/rrssb.min.js"></script>
+<script src="../../assets/nouislider/js/jquery.nouislider.min.js"></script>
+<script src="../../assets/owl-carousel/owl.carousel.js"></script>
+<script src="../../assets/bootstrap/js/tooltip.js"></script>
+<script src="../../assets/bootstrap/js/popover.js"></script>
+
+<!-- Sripts for individual pages, depending on what plug-ins are used -->
+<!-- VIDEO JS -->
+<script src="../../assets/ui-kit/js/video.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function() {
+		// Video 1 - HTML 5
+	    videojs("video1", {
+	        "height": "auto",
+	        "width": "auto"
+	    }).ready(function() {
+	        var myPlayer = this; // Store the video object
+	        var aspectRatio = 1 / 2; // Make up an aspect ratio
+	        function resizeVideoJS() {
+	            // Get the parent element's actual width
+	            var width = document.getElementById(myPlayer.id()).parentElement.offsetWidth;
+	            // Set width to fill parent element, Set height
+	            myPlayer.width(width).height(width * aspectRatio);
+	        }
+	        resizeVideoJS(); // Initialize the function
+	        window.onresize = resizeVideoJS; // Call the function on resize
+	    });
+	});
+</script>
+
+<!-- Vinay App JS -->
+<script src="../../js/wp.app.js"></script>
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- Temp You can remove this once you started to work on your project -->
+<script src="../../js/jquery.cookie.js"></script>
+<script src="../../js/wp.switcher.js"></script>
+<script type="text/javascript" src="../../js/wp.ga.js"></script>
+</body>
+</html>
