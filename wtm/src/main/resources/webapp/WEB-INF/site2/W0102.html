@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>  
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="robots" content="index, follow"/>
-    <title>Product Manage</title>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <meta name="robots" content="index, follow"></meta>
+    <title>Way to Media</title>
 
     <!-- Essential styles -->
-    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css" type="text/css"/> 
-    <link rel="stylesheet" href="../../assets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen"/> 
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css" type="text/css"></link>
+    <link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css" type="text/css"></link> 
+    <link rel="stylesheet" href="../../assets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen"></link> 
      
-    <!-- Boomerang styles -->
-        <link id="wpStylesheet" type="text/css" href="../../css/global-style.css" rel="stylesheet" media="screen"/>
+    <!-- Vinay styles -->
+        <link id="wpStylesheet" type="text/css" href="../../css/global-style.css" rel="stylesheet" media="screen"></link>
         
 
     <!-- Favicon -->
-    <link href="images/favicon.png" rel="icon" type="image/png"/>
+    <link href="../../images/favicon.png" rel="icon" type="image/png"></link>
 
     <!-- Assets -->
-    <link rel="stylesheet" href="../../assets/owl-carousel/owl.carousel.css"/>
-    <link rel="stylesheet" href="../../assets/owl-carousel/owl.theme.css"/>
-    <link rel="stylesheet" href="../../assets/sky-forms/css/sky-forms.css"/>    
+    <link rel="stylesheet" href="../../assets/owl-carousel/owl.carousel.css"></link>
+    <link rel="stylesheet" href="../../assets/owl-carousel/owl.theme.css"></link>
+    <link rel="stylesheet" href="../../assets/sky-forms/css/sky-forms.css"></link>    
     <!--[if lt IE 9]>
-        <link rel="stylesheet" href="../../assets/sky-forms/css/sky-forms-ie8.css">
+        <link rel="stylesheet" href="assets/sky-forms/css/sky-forms-ie8.css">
     <![endif]-->
 
     <!-- Required JS -->
     <script src="../../js/jquery.js"></script>
     <script src="../../js/jquery-ui.min.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <!-- Page scripts -->
     
 </head>
@@ -40,7 +40,7 @@
 <section id="navMobile" class="aside-menu left">
     <form class="form-horizontal form-search">
         <div class="input-group">
-            <input type="search" class="form-control" placeholder="Search..."/>
+            <input type="search" class="form-control" placeholder="Search..."></input>
             <span class="input-group-btn">
                 <button id="btnHideMobileNav" class="btn btn-close" type="button" title="Hide sidebar"><i class="fa fa-times"></i></button>
             </span>
@@ -62,7 +62,7 @@
         </div>
     </form>
     
-    <h5 class="side-section-title">Optional sidebar menu</h5>
+    <h5 class="side-section-title">Our Calling Card</h5>
     <div class="nav">
         <ul>
             <li>
@@ -71,15 +71,7 @@
             <li>
                 <a href="#">About us</a>
             </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Work</a>
-            </li>
-            <li>
-                <a href="#">Online shop</a>
-            </li>
+         
         </ul>
     </div>
     
@@ -93,13 +85,13 @@
     <h5 class="side-section-title">Contact information</h5>
     <div class="contact-info">
         <h5>Address</h5>
-        <p>5th Avenue, New York - United States</p>
+        <p>Velacherry, Chennai, India</p>
         
         <h5>Email</h5>
-        <p>hello@webpixels.ro</p>
+        <p>hello@way2media.com</p>
         
         <h5>Phone</h5>
-        <p>+10 724 1234 567</p>
+        <p>+919940567765</p>
     </div>
 </section>
 
@@ -107,177 +99,45 @@
 <div class="body-wrap">
     <!-- This section is only for demonstration purpose only. Check out the docs for more informations" -->
     <div id="divStyleSwitcher" class="style-switcher-slidebar">
-    <a href="#" id="cmdShowStyleSwitcher" class="open-panel hidden-xs"><i class="fa fa-cog"></i></a>
-    <div class="switch-panel">
-        <h3>Boomerang - Style Builder</h3>
-        <div class="panel-section">
-            <h4 class="title text-uppercase font-normal">Layout options</h4>
-
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="form-group">
-                        <label>I prefer it:</label> 
-                        <select id="cmbLayoutStyle" class="form-control">
-                            <option value="1">Fluid</option>
-                            <option value="2">Boxed</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="form-group">
-                        <label></label>
-                        <select id="cmbLayoutColor" class="form-control">
-                            <option value="1">Light</option>
-                            <option value="2">Dark</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <label class="mt-10">Predefined body backgrounds</label>
-            <span class="clearfix"></span>
-            <span id="cmbBodyBg" class="color-switch">
-                <a href="#" id="cmdBodyBg1" class="body-bg-1 ttip" data-toggle="bottom" title="Solid color"></a>
-                <a href="#" id="cmdBodyBg2" class="body-bg-2 ttip" data-toggle="bottom" title="Black Lozenge"></a>
-                <a href="#" id="cmdBodyBg3" class="body-bg-3 ttip" data-toggle="bottom" title="Squairy Light"></a>
-                <a href="#" id="cmdBodyBg4" class="body-bg-4 ttip" data-toggle="bottom" title="Dark Dotted"></a>
-                <a href="#" id="cmdBodyBg5" class="body-bg-5 ttip" data-toggle="bottom" title="Skulls"></a>
-                <a href="#" id="cmdBodyBg6" class="body-bg-6 ttip" data-toggle="bottom" title="Image Background - 1"></a>
-                <a href="#" id="cmdBodyBg7" class="body-bg-7 ttip" data-toggle="bottom" title="Image Background - 2"></a>
-                <span class="clearfix"></span>
-            </span>
-
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="form-group">
-                        <label>Section title:</label>
-                        <select id="cmbSectionTitleStyle" class="form-control">
-                            <option value="1">Style 1</option>
-                            <option value="2">Style 2</option>
-                            <option value="3">Style 3</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="form-group">
-                        <label>Color:</label>
-                        <select id="cmbSectionTitleColor" class="form-control" disabled="disabled">
-                            <option value="1">Base</option>
-                            <option value="2">Alt Base</option>
-                            <option value="3">Light</option>
-                            <option value="4">Dark</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>   
-
-        <hr></hr> 
-
-        <div class="panel-section">
-            <h4 class="title text-uppercase font-normal">Header options</h4> 
-
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="form-group">
-                        <label>Header:</label>
-                        <select id="cmbHeaderStyle" class="form-control">
-                            <option value="2">Header 1: Default navbar</option>
-                            <option value="3">Header 2: Default navbar + Top header</option>
-                            <option value="1">Header 3: Header + Navbar</option>
-                            <option value="4">Header 4: Cover</option>
-<!-- 
-                            <option value="5">Header 1: Default + Mobile nav 2</option>
-                            <option value="6">Header 2: Default + Top header + Mobile nav 2</option>
-                            <option value="7">Header 3: Header + Navbar + Mobile nav 2</option>
-                            <option value="8">Header 4: Cover</option> -->
-                        </select>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="form-group">
-                        <label>Top header color:</label>
-                        <select id="cmbTopHeaderColor" class="form-control" disabled="disabled">
-                            <option value="1">Light</option>
-                            <option value="2">Dark</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>     
-
-        <div class="panel-section">
-            <div class="row">
-                <div class="col-xs-6">
-                    <div class="form-group">
-                        <label>Nav shadow</label>
-                        <select id="cmbNavShadow" class="form-control">
-                            <option value="1">No</option>
-                            <option value="2">Yes</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="form-group">
-                        <label>Dropdown arrow:</label>
-                        <select id="cmbNavDropdownArrow" class="form-control">
-                            <option value="2">Yes</option>
-                            <option value="1">No</option>
-                        </select>
-                    </div>
-                </div>          
-            </div>
-        </div>   
-
-        <hr></hr>
-
-        <div class="panel-section">
-            <h4 class="title text-uppercase font-normal">Color options</h4>
-
-            <label>Predefined colors</label>
-            <span class="clearfix"></span>
-            <span class="color-switch">
-                <a href="#" id="cmdSchemeRed" class="color-red" title="Red">Red</a>
-                <a href="#" id="cmdSchemeViolet" class="color-violet" title="Violet">Violet</a>
-                <a href="#" id="cmdSchemeBlue" class="color-blue" title="Blue">Blue</a>
-                <a href="#" id="cmdSchemeGreen" class="color-green" title="Green">Green</a>
-                <a href="#" id="cmdSchemeYellow" class="color-yellow" title="Yellow">Yellow</a>
-                <a href="#" id="cmdSchemeOrange" class="color-orange" title="Orange">Orange</a>
-            </span>
-        </div>
-
-        <hr></hr>
-
-        <div class="panel-section">
-            <h4 class="title">
-                <span class="text-uppercase font-normal">Special</span> 
-                <a href="#" class="pop" title="About customization" data-content="We created some examples that show you the multitude of options you have so you make this template as you wish. Customization is very easy and it is made in only one file.">
-                    <i class="fa fa-question-circle"></i>
-                </a>
-                <label class="badge base pull-right">New</label>
-            </h4>
-
-            <label>Predefined schemes</label>
-            <span class="clearfix"></span>
-            <span class="color-switch">
-                <a href="#" id="cmdSchemeBW" class="color-bw ttip" data-toggle="top" title="Black  White">Black and white</a>
-                <a href="#" id="cmdSchemeDark" class="color-dark ttip" data-toggle="top" title="Dark">Dark</a>
-                <a href="#" id="cmdSchemeFlat" class="color-flat ttip" data-toggle="top" title="Flat">Flat</a>
-            </span>
-
-        </div>
-
-        <div class="panel-section mt-15 hide">
-            <a href="#"><span>Reset all applied styles</span></a>
-            <br></br>
-        </div>
-
-    </div>
+   
+    
 </div>
             <!-- HEADER -->
         <div id="divHeaderWrapper">
             <header class="header-standard-2">     
     <!-- MAIN NAV -->
+    
+    
+<div ng-controller="MyController" >
+    <button ng-click="myData.doClick(item, $event)">Send AJAX Request</button>
+    <br/>
+    Data from server: {{myData}}
+  </div>
+
+  <script>
+    angular.module("myapp", [])
+        .controller("MyController", function($scope, $http) {
+            $scope.myData = {};
+            $scope.myData.doClick = function(item, event) {
+
+                var responsePromise = $http.get("http://localhost:8083/ajax/backup");
+
+                responsePromise.success(function(data, status, headers, config) {
+                    $scope.myData = data;
+                });
+                responsePromise.error(function(data, status, headers, config) {
+                    alert("AJAX failed!");
+                });
+            }
+
+
+        } );
+  </script>
+
+    
+    
+    
+    
     <div class="navbar navbar-wp navbar-arrow mega-nav" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -288,8 +148,8 @@
                     <i class="fa fa-bars icon-custom"></i>
                 </button>
 
-                <a class="navbar-brand" href="index.html" title="Boomerang | One template. Infinite solutions">
-                    <img src="images/boomerang-logo-black.png" alt="Boomerang | One template. Infinite solutions"/>
+                <a class="navbar-brand" href="index.html" title="Way2media">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Camera_Icon_2.png" alt="Way2Media"></img>
                 </a>
             </div>
             <div class="navbar-collapse collapse">
@@ -298,7 +158,7 @@
                         <div class="bg-light-gray">
                             <form class="form-horizontal form-light p-15" role="form">
                                 <div class="input-group input-group-lg">
-                                    <input type="text" class="form-control" placeholder="I want to find ..."/>
+                                    <input type="text" class="form-control" placeholder="I want to find ..."></input>
                                     <span class="input-group-btn">
                                         <button class="btn btn-white" type="button">
                                             <i class="fa fa-search"></i>
@@ -315,46 +175,40 @@
                                 <div class="row">
                                     <div class="col-md-3 mega-nav-section-wr">
                                         <div class="mega-nav-section">
-                                            <img src="images/prv/wk-big-img-9.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm" alt=""/>
-                                            <h3 class="mega-nav-section-title">Business &amp; Other</h3>
+                                            <img src="../../images/prv/wk-big-img-9.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm" alt=""></img>
+                                            <h3 class="mega-nav-section-title">Specific Homes &amp; Etc</h3>
                                             <ul class="mega-nav-ul">
-                                                <li><a href="homepage-business-1.html">Homepage: Business 1</a></li>
-                                                <li><a href="homepage-business-2.html">Homepage: Business 2</a></li>
-                                                <li><a href="homepage-cover.html">Homepage: Cover</a></li>
-                                                <li><a href="homepage-shop-1.html">Homepage: Boomerang Shop</a></li>
-                                                <li><a href="homepage-fashion-1.html">Homepage: Fashion Shop</a></li>
+                                                <li><a href="homepage-business-1.html">HomePage : Artistes</a></li>
+                                                <li><a href="homepage-business-2.html">Homepage: Studios</a></li>
+                                                <li><a href="homepage-cover.html">Homepage: Press</a></li>                                                
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-md-3 mega-nav-section-wr">
                                         <div class="mega-nav-section"> 
-                                            <img src="images/prv/wk-big-img-10.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm hidden-xs hidden-sm" alt=""/>
+                                            <img src="../../images/prv/wk-big-img-10.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm hidden-xs hidden-sm" alt=""></img>
                                             <h3 class="mega-nav-section-title">Agencies &amp; Creatives</h3>
                                             <ul class="mega-nav-ul">
-                                                <li><a href="homepage-agency-1.html">Homepage: Agency</a></li>
-                                                <li><a href="homepage-estate-1.html">Homepage: Real Estate</a></li>
-                                                <li><a href="homepage-jobs-1.html">Homepage: Jobs</a></li>
-                                                <li><a href="homepage-models-1.html">Homepage: Models</a></li>
+                                                <li><a href="homepage-agency-1.html">Homepage: Agency</a></li>                                                
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-md-3 mega-nav-section-wr">
                                         <div class="mega-nav-section">
-                                            <img src="images/prv/wk-big-img-11.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm" alt=""/>
+                                            <img src="../../images/prv/wk-big-img-11.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm" alt=""></img>
                                             <h3 class="mega-nav-section-title">News &amp; Media</h3>
                                             <ul class="mega-nav-ul">
-                                                <li><a href="homepage-magazine-1.html">Homepage: Magazine</a></li>
-                                                <li><a href="homepage-newspaper-1.html">Homepage: Newspaper</a></li>
+                                                <li><a href="homepage-magazine-1.html">Blogs</a></li>
+                                                <li><a href="homepage-newspaper-1.html">NewsReel Preview</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="mega-nav-section">
-                                            <img src="images/prv/wk-big-img-12.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm" alt=""/>
-                                            <h3 class="mega-nav-section-title">Institutions</h3>
+                                            <img src="../../images/prv/wk-big-img-12.jpg" class="img-responsive img-thumbnail hidden-xs hidden-sm" alt=""></img>
+                                            <h3 class="mega-nav-section-title">Affiliated Agencies</h3>
                                             <ul class="mega-nav-ul">
-                                                <li><a href="homepage-school-1.html">Homepage: School</a></li>
-                                                <li><a href="homepage-medical-1.html">Homepage: Medical</a></li>
+                                             
                                             </ul>
                                         </div>
                                     </div>
@@ -362,278 +216,36 @@
                             </div>
                         </ul>
                     </li>
+              
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">About us</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="about-1.html">About us: 1</a></li>
-                                    <li><a tabindex="-1" href="about-2.html">About us: 2</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Team</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="team-list-1.html">Team members: 1</a></li>
-                                    <li><a tabindex="-1" href="team-list-2.html">Team members: 2</a></li>
-                                    <li><a tabindex="-1" href="team-member-1.html">Single team member: 1</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Services</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="services-1.html">Services: 1</a></li>
-                                    <li><a tabindex="-1" href="services-2.html">Services: 2</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Jobs</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="jobs-listing-1.html">Jobs listing: 1</a></li>
-                                    <li><a tabindex="-1" href="job-description-1.html">Job description</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Pricing plans</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="pricing-1.html">Pricing: 1</a></li>
-                                    <li><a tabindex="-1" href="pricing-2.html">Pricing: 2</a></li>
-                                    <li><a tabindex="-1" href="pricing-3.html">Pricing: 3</a></li>
-                                    <li><a tabindex="-1" href="pricing-4.html">Pricing: 4</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Sign in</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="sign-in-1.html">Sign in: 1</a></li>
-                                    <li><a tabindex="-1" href="sign-in-2.html">Sign in: 2</a></li>
-                                    <li><a tabindex="-1" href="sign-in-3.html">Sign in: 3 (translucent)</a></li>
-                                    <li><a tabindex="-1" href="sign-in-4.html">Sign in variations</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Sign up</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="sign-up-1.html">Sign up: 1</a></li>
-                                    <li><a tabindex="-1" href="sign-up-2.html">Sign up: 2</a></li>
-                                    <li><a tabindex="-1" href="sign-up-3.html">Sign up: 3 (translucent)</a></li>
-                                    <li><a tabindex="-1" href="sign-up-4.html">Sign up variations</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Contact</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="contact-1.html">Contact: Fluid</a></li>
-                                    <li><a tabindex="-1" href="contact-2.html">Contact: Two cols</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="timeline.html">Timeline</a></li>
-                            <li><a href="listings.html">Listings</a></li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Helpful pages</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="404.html">Error 404</a></li>
-                                    <li><a tabindex="-1" href="faq.html">FAQ</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories</a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Real Estate</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="homepage-estate-1.html">Homepage</a></li>
-                                    <li><a tabindex="-1" href="estate-listing-1.html">Listing: List </a></li>
-                                    <li><a tabindex="-1" href="estate-listing-2.html">Listing: Grid</a></li>
-                                    <li><a tabindex="-1" href="estate-property.html">Property</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Jobs</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="homepage-jobs-1.html">Homepage</a></li>
-                                    <li><a tabindex="-1" href="jobs-listing-1.html">Jobs listing</a></li>
-                                    <li><a tabindex="-1" href="job-description-1.html">Job description</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Magazine &amp; Newspaper</a>
-                                <ul class="dropdown-menu">
-                                    <li class="divider">Magazine</li>
-                                    <li><a tabindex="-1" href="homepage-magazine-1.html">Homepage</a></li>
-                                    <li><a tabindex="-1" href="magazine-listing-1.html">Category listing: List</a></li>
-                                    <li><a tabindex="-1" href="magazine-listing-2.html">Category listing: Grid</a></li>
-                                    <li><a tabindex="-1" href="magazine-article-1.html">Magazine article</a></li>
-                                    <li class="divider">Newspaper</li>
-                                    <li><a tabindex="-1" href="homepage-newspaper-1.html">Newspaper homepage</a></li>
-                                    <li><a tabindex="-1" href="newspaper-listing-1.html">Newspaper listing: List</a></li>
-                                    <li><a tabindex="-1" href="newspaper-listing-2.html">Newspaper listing: Grid</a></li>
-                                    <li><a tabindex="-1" href="magazine-article-1.html">Newspaper article</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login</a>
+                     
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Newsletter template</a>
+                                <a tabindex="-1" href="#">About Us</a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown-submenu"><a tabindex="-1" href="#">Default</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-1.html" target="_blank">Newsletter Default: Red</a></li>
-                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-2.html" target="_blank">Newsletter Default: Purple</a></li>
-                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-3.html" target="_blank">Newsletter Default: Blue</a></li>
-                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-4.html" target="_blank">Newsletter Default: Green</a></li>
-                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-5.html" target="_blank">Newsletter Default: Yellow</a></li>
-                                            <li><a tabindex="-1" href="newsletter/default/newsletter-default-6.html" target="_blank">Newsletter Default: Orange</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu"><a tabindex="-1" href="#">Flat</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-1.html" target="_blank">Newsletter Flat: Alizarin</a></li>
-                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-2.html" target="_blank">Newsletter Flat: Amethyst</a></li>
-                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-3.html" target="_blank">Newsletter Flat: Belize Hole</a></li>
-                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-4.html" target="_blank">Newsletter Flat: Emerald</a></li>
-                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-5.html" target="_blank">Newsletter Flat: Sun Flower</a></li>
-                                            <li><a tabindex="-1" href="newsletter/flat/newsletter-flat-6.html" target="_blank">Newsletter Flat: Carrot</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu"><a tabindex="-1" href="#">Shop</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-1.html" target="_blank">Newsletter Shop: Red</a></li>
-                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-2.html" target="_blank">Newsletter Shop: Purple</a></li>
-                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-3.html" target="_blank">Newsletter Shop: Blue</a></li>
-                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-4.html" target="_blank">Newsletter Shop: Green</a></li>
-                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-5.html" target="_blank">Newsletter Shop: Yellow</a></li>
-                                            <li><a tabindex="-1" href="newsletter/shop/newsletter-shop-6.html" target="_blank">Newsletter Shop: Orange</a></li>
-                                        </ul>
-                                    </li>
+                                    
+                                    
                                 </ul>
                             </li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Components</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="wp-accordion.html">Accordion</a></li>
-                                    <li><a tabindex="-1" href="wp-alerts.html">Alerts</a></li>
-                                    <li><a tabindex="-1" href="wp-badges.html">Badges</a></li>
-                                    <li><a tabindex="-1" href="wp-blocks-default.html">Blocks</a></li>
-                                    <li><a tabindex="-1" href="wp-buttons-boomerang.html">Buttons</a></li>
-                                    <li><a tabindex="-1" href="wp-callouts.html">Callouts</a></li>
-                                    <li><a tabindex="-1" href="wp-carousels.html">Carousels</a></li>
-                                    <li><a tabindex="-1" href="wp-counters.html">Counters</a></li>
-                                    <li><a tabindex="-1" href="wp-pagination.html">Pagination</a></li>
-                                    <li><a tabindex="-1" href="wp-progress-bars.html">Progress bars</a></li>
-                                    <li><a tabindex="-1" href="wp-range-sliders.html">Range sliders</a></li>
-                                    <li><a tabindex="-1" href="wp-rating-stars.html">Rating stars</a></li>
-                                    <li><a tabindex="-1" href="wp-ribbons.html">Ribbons</a></li>
-                                    <li><a tabindex="-1" href="wp-tabs.html">Tabs</a></li>
-                                </ul>
-                            </li> 
-                            <li><a href="wp-typography-general.html">Typography</a></li>
-                            <li><a href="wp-features.html">Features</a></li>
+                        
+                          
                         </ul>
                     </li>
                     <li class="dropdown dropdown-meganav mega-dropdown-fluid">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
-                        <ul class="dropdown-menu">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-3 mega-nav-section-wr">
-                                        <div class="mega-nav-section">
-                                            <h3 class="mega-nav-section-title">Gallery with no space</h3>
-                                            <ul class="mega-nav-ul">
-                                                <li><a href="portfolio-two-col-boxed.html">Two columns grid: Boxed</a></li>
-                                                <li><a href="portfolio-three-col-boxed.html">Three columns grid: Boxed</a></li>
-                                                <li><a href="portfolio-four-col-boxed.html">Four columns grid: Boxed</a></li>
-                                                <li><a href="portfolio-two-col-fluid.html">Two columns grid: Fluid</a></li>
-                                                <li><a href="portfolio-three-col-fluid.html">Three columns grid: Fluid</a></li>
-                                                <li><a href="portfolio-four-col-fluid.html">Four columns grid: Fluid</a></li>
-                                                <li><a href="portfolio-five-col-fluid.html">Five columns grid: Fluid</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 mega-nav-section-wr">
-                                        <div class="mega-nav-section">
-                                            <h3 class="mega-nav-section-title">Gallery with space n/text</h3>
-                                            <ul class="mega-nav-ul">
-                                                <li><a href="portfolio-two-col-space-boxed.html">Two columns grid: Boxed</a></li>
-                                                <li><a href="portfolio-three-col-space-boxed.html">Three columns grid: Boxed</a></li>
-                                                <li><a href="portfolio-four-col-space-boxed.html">Four columns grid: Boxed</a></li>
-                                                <li><a href="portfolio-two-col-space-fluid.html">Two columns grid: Fluid</a></li>
-                                                <li><a href="portfolio-three-col-space-fluid.html">Three columns grid: Fluid</a></li>
-                                                <li><a href="portfolio-four-col-space-fluid.html">Four columns grid: Fluid</a></li> 
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 mega-nav-section-wr">
-                                        <div class="mega-nav-section">
-                                            <h3 class="mega-nav-section-title">Gallery with space w/ text</h3>
-                                            <ul class="mega-nav-ul">
-                                                <li><a href="portfolio-two-col-text-boxed.html">Two columns grid with text</a></li>
-                                                <li><a href="portfolio-three-col-text-boxed.html">Three columns grid with text</a></li>
-                                                <li><a href="portfolio-four-col-text-boxed.html">Four columns grid with text</a></li>
-                                                <li><a href="portfolio-two-col-header-boxed.html">Two columns grid with header</a></li>
-                                                <li><a href="portfolio-three-col-header-boxed.html">Three columns grid with header</a></li> 
-                                                <li><a href="portfolio-four-col-header-boxed.html">Four columns grid with header</a></li> 
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="mega-nav-section">
-                                            <h3 class="mega-nav-section-title">Single project</h3>
-                                            <ul class="mega-nav-ul">
-                                                <li><a href="portfolio-single-project-horizontal.html">Single project: Horizontal</a></li>
-                                                <li><a href="portfolio-single-project-vertical.html">Single project: Vertical</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </ul>
+                        
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="blog-grid-1.html">Blog: Grid one column</a></li>
-                            <li><a href="blog-grid-2.html">Blog: Grid two columns</a></li>
-                            <li><a href="blog-list-1.html">Blog: List one</a></li>
-                            <li><a href="blog-fluid-1.html">Blog: Full width </a></li>
-                            <li><a href="blog-masonry-1.html">Blog: Masonry w/ sidebar</a></li>
-                            <li><a href="blog-masonry-2.html">Blog: Masonry three columns</a></li>
-                            <li><a href="blog-masonry-3.html">Blog: Masonry four colums</a></li>
-                            <li><a href="blog-post-1.html">Post: Standard</a></li>
-                            <li><a href="blog-post-2.html">Post: Full width</a></li>
-                        </ul>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Way to Media NewsReel</a>
+                        
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
                         <ul class="dropdown-menu">
-                            <li><a href="homepage-shop-1.html">Homepage</a></li>
-                            <li><a href="shop-product-list-1.html">Products: Full width</a></li>
-                            <li><a href="shop-product-list-2.html">Products: With sidebar</a></li>
-                            <li><a href="shop-product-single.html">Single product</a></li>
-                            <li><a href="shop-cart.html">Cart</a></li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Checkout progress</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="shop-checkout-method.html">Checkout: Login-Register</a></li>
-                                    <li><a tabindex="-1" href="shop-checkout-shipping.html">Checkout: Shipping</a></li>
-                                    <li><a tabindex="-1" href="shop-checkout-payment.html">Checkout: Payment method</a></li>
-                                    <li><a tabindex="-1" href="shop-checkout-order.html">Checkout: Order review</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Invoice</a>
-                                <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="invoice-1.html">Invoice: New</a></li>
-                                    <li><a tabindex="-1" href="invoice-2.html">Invoice: Paid</a></li>
-                                    <li><a tabindex="-1" href="invoice-3.html">Invoice: Unpaid</a></li>
-                                </ul>
-                            </li>
                             <li><a href="user-account.html">User account</a></li>                            
                         </ul>
                     </li>
@@ -644,7 +256,7 @@
                                 <div class="dropdown-form">
                                     <form class="form-horizontal form-light p-15" role="form">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="I want to find ..."/>
+                                            <input type="text" class="form-control" placeholder="I want to find ..."></input>
                                             <span class="input-group-btn">
                                                 <button class="btn btn-base" type="button">Go</button>
                                             </span>
@@ -669,17 +281,17 @@
         <!-- Optional header components (ex: slider) -->
             
     <!-- MAIN CONTENT -->
-        <div class="pg-opt">
+    	<div class="pg-opt">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h2>Shop</h2>
+                <div class="col-xs-6">
+                    <h2>WAY TO MEDIA NEWSREEL</h2>
                 </div>
-                <div class="col-md-6">
+                <div class="col-xs-6">
                     <ol class="breadcrumb">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li class="active">Product list</li>
+                        <li><a href="#">News Reel</a></li>
+                        <li class="active">Large grid</li>
                     </ol>
                 </div>
             </div>
@@ -690,345 +302,424 @@
         <div class="wp-section">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-9">
+                    	<div class="row">
+                    		<div class="col-md-6">
+		                    	<!-- Standard image post example -->
+		                    	<div class="post-item style2 no-padding">
+		                    		<div class="post-content-wr">
+				                        <div class="post-meta-top">
+				                            <div class="post-image">
+				                            	<a href="?event=EV_FLT_W0102">
+				                            				<img src="../../images/prv/blog/blog-img-1_1280x800.jpg" alt=""></img>
+				                            						                            	</a>
+				                            </div>
+				                            <h2 class="post-title">
+				                            	<a href="#">Creative PhotoGrpahy</a>
+				                            </h2>
+				                        </div>
+				                        <div class="post-content clearfix">
+				                            <div class="post-tags">Tagged Categories <a href="#">STILLS</a>, <a href="#">SPECIAL</a>, <a href="#">SUMMER</a></div>
+				                            <div class="post-comments"><strong>23</strong>likes</div>
+				                            <div class="post-desc">
+				                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				                            </div>
+				                        </div>
+				                        <div class="post-meta-bot clearfix">
+				                            <span class="post-author">UPLOADEDBY <a href="#">Ravichandran</a></span>
+				                            <a href="#" class="btn btn-sm btn-base">Read more</a>
+				                        </div>
+				                    </div>
+			                    </div>
+			                </div>
+			                <div class="col-md-6">
+			                    <!-- Standard image post example -->
+			                    <div class="post-item style2 no-padding">
+		                    		<div class="post-content-wr">
+				                        <div class="post-meta-top">
+				                            <div class="post-image">
+				                           
+				                            	<a href="?event=EV_DTL_W0102">
+				                            						                            			<img src="../../images/prv/blog/blog-img-2_1280x800.jpg" alt=""></img>
+				                            						                            	</a>
+				                            </div>
+				                            <h2 class="post-title">
+				                            	<a href="#">The Way to enter into Mainstream Media</a>
+				                            </h2>
+				                        </div>
+				                        <div class="post-content clearfix">
+				                            <div class="post-tags">Posted in <a href="#">MASS-MEDIA</a>, <a href="#">STILLS</a>, <a href="#">SUMMER</a></div>
+				                            <div class="post-comments"><strong>23</strong>likes</div>
+				                            <div class="post-desc">
+				                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				                            </div>
+				                        </div>
+				                        <div class="post-meta-bot clearfix">
+				                            <span class="post-author">UPLOADEDBY <a href="#">Ravichandran</a></span>
+				                            <a href="#" class="btn btn-sm btn-base">Read more</a>
+				                        </div>
+				                    </div>
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="row">
+			            	<div class="col-md-6">
+			                   <!-- Video post example - 4 skins to apply: base, base-alt, light, dark and the shadowed class if you want to apply a ncie shadow on the video wrapper -->
+			                    <div class="post-item style2 no-padding">
+		                    		<div class="post-content-wr">
+				                        <div class="post-meta-top">
+				                            <div class="post-video">
+						                        						                        <video id="video1" controls="none" preload="none" poster="../../images/prv/blog/blog-img-5_1280x800.jpg" class="video-js vjs-styled-skin base">
+						                          
+					                                <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4"/>
+					                                <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm"/>
+					                            </video>
+				                            </div>
+				                            <h2 class="post-title">
+				                            	<a href="#">The Idea of Creativity</a>
+				                            </h2>
+				                        </div>
+				                        <div class="post-content clearfix">
+				                            <div class="post-tags">Posted in <a href="#">MASS-MEDIA</a>, <a href="#">STILLS</a>, <a href="#">SUMMER</a></div>
+				                            <div class="post-comments"><strong>23</strong>comments</div>
+				                            <div class="post-desc">
+				                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				                            </div>
+				                        </div>
+				                        <div class="post-meta-bot clearfix">
+				                            <span class="post-author">UPLOADEDBY <a href="#">Ravichandran</a></span>
+				                            <a href="#" class="btn btn-sm btn-base">Read more</a>
+				                        </div>
+				                    </div>
+			                    </div>
+			                </div>
+			                <div class="col-md-6">
+			                    <!-- Carousel image post example -->
+			                    <div class="post-item style2 no-padding">
+		                    		<div class="post-content-wr">
+				                        <div class="post-meta-top">
+				                            <div class="post-image">
+				                            	<a href="#">
+				                            						                            			<div id="basicCarousel" class="carousel carousel-4 slide color-two-l" data-ride="carousel">
+								                            <!-- Indicators -->
+								                            <ol class="carousel-indicators">
+								                                <li data-target="#basicCarousel" data-slide-to="0" class="active"></li>
+								                                <li data-target="#basicCarousel" data-slide-to="1" class="active"></li>
+								                            </ol>
+								                            
+								                            <div class="carousel-inner">
+								                                <div class="item item-dark active">
+								                                    <img src="../../images/prv/blog/blog-img-4_1280x800.jpg" alt="" class="img-responsive"></img>
+								                                </div>
+								                                <div class="item item-dark">
+								                                    <img src="../../images/prv/blog/blog-img-5_1280x800.jpg" alt=""  class="img-responsive"></img>
+								                                    
+								                                </div>
+								                            </div>
+								                            
+								                            <!-- Controls -->
+								                            <a class="left carousel-control" href="#basicCarousel" data-slide="prev">
+								                                <i class="fa fa-angle-left"></i>
+								                            </a>
+								                            <a class="right carousel-control" href="#basicCarousel" data-slide="next">
+								                                <i class="fa fa-angle-right"></i>
+								                            </a>     
+								                        </div>
+				                            						                            	</a>
+				                            </div>
+				                            <h2 class="post-title">
+				                            	<a href="#">Always do your best. What you plant now, you will harvest later</a>
+				                            </h2>
+				                        </div>
+				                        <div class="post-content clearfix">
+				                            <div class="post-tags">Posted in <a href="#">MASS-MEDIA</a>, <a href="#">STILLS</a>, <a href="#">SUMMER</a></div>
+				                            <div class="post-comments"><strong>23</strong>likes</div>
+				                            <div class="post-desc">
+				                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				                            </div>
+				                        </div>
+				                        <div class="post-meta-bot clearfix">
+				                            <span class="post-author">UPLOADEDBY <a href="#">Ravichandran</a></span>
+				                            <a href="#" class="btn btn-sm btn-base">Read more</a>
+				                        </div>
+				                    </div>
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="row">
+			            	<div class="col-md-6">
+			            		<div class="post-item style2 no-padding">
+		                    		<div class="post-content-wr">
+				                        <div class="post-meta-top">
+				                            <div class="post-image">
+				                            	<a href="#">
+				                            						                            			<img src="../../images/prv/blog/blog-img-6_1280x800.jpg" alt=""></img>
+				                            						                            	</a>
+				                            </div>
+				                            <h2 class="post-title">
+				                            	<a href="#">Always do your best. What you plant now, you will harvest later</a>
+				                            </h2>
+				                        </div>
+				                        <div class="post-content clearfix">
+				                            <div class="post-tags">Posted in <a href="#">MASS-MEDIA</a>, <a href="#">STILLS</a>, <a href="#">SUMMER</a></div>
+				                            <div class="post-comments"><strong>23</strong>likes</div>
+				                            <div class="post-desc">
+				                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				                            </div>
+				                        </div>
+				                        <div class="post-meta-bot clearfix">
+				                            <span class="post-author">UPLOADEDBY <a href="#">Ravichandran</a></span>
+				                            <a href="#" class="btn btn-sm btn-base">Read more</a>
+				                        </div>
+				                    </div>
+			                    </div>
+			            	</div>
+			            	<div class="col-md-6">
+			                    <!-- Standard image post example -->
+			                    <div class="post-item style2 no-padding">
+		                    		<div class="post-content-wr">
+				                        <div class="post-meta-top">
+				                            <div class="post-image">
+				                            	<a href="#">
+				                            						                            			<img src="../../images/prv/blog/blog-img-5_1280x800.jpg" alt=""></img>
+				                            						                            	</a>
+				                            </div>
+				                            <h2 class="post-title">
+				                            	<a href="#">Always do your best. What you plant now, you will harvest later</a>
+				                            </h2>
+				                        </div>
+				                        <div class="post-content clearfix">
+				                            <div class="post-tags">Posted in <a href="#">MASS-MEDIA</a>, <a href="#">STILLS</a>, <a href="#">SUMMER</a></div>
+				                            <div class="post-comments"><strong>23</strong>likes</div>
+				                            <div class="post-desc">
+				                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				                            </div>
+				                        </div>
+				                        <div class="post-meta-bot clearfix">
+				                            <span class="post-author">UPLOADEDBY <a href="#">Ravichandran</a></span>
+				                            <a href="#" class="btn btn-sm btn-base">Read more</a>
+				                        </div>
+				                    </div>
+			                    </div>
+			                </div>
+			            </div>
+			            
+                    </div>
                     <div class="col-md-3">
-                        <div class="sidebar">
-    <div class="panel panel-default panel-sidebar-1">
-        <div class="panel-heading"><h2>Filter by</h2></div>
-        <div class="panel-body">
-            <h4>Category</h4>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="?event=EV_PVS_01">Laptops</a>
-                </li>
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="">Tablets</a>
-                </li>
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="">Phones</a>
-                </li>
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="">Mice</a>
-                </li>
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="">Cameras</a>
-                </li>
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="">Home Cinemas</a>
-                </li>
-            </ul>
-
-            <h4>Manufacturer</h4>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="">Laptops</a>
-                </li>
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="">Tablets</a>
-                </li>
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="">Phones</a>
-                </li>
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="">Mice</a>
-                </li>
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="">Cameras</a>
-                </li>
-                <li class="list-group-item">
-                    <span class="badge base">14</span>
-                    <a href="">Home Cinemas</a>
-                </li>
-            </ul>
-
-            <h4>Color</h4>
-            <span class="color-switch">
-                <a href="#" id="cmdRed" class="color-red" title="Red">Red</a>
-                <a href="#" id="cmdViolet" class="color-violet" title="Violet">Violet</a>
-                <a href="#" id="cmdBlue" class="color-blue" title="Blue">Blue</a>
-                <a href="#" id="cmdGreen" class="color-green" title="Green">Green</a>
-                <a href="#" id="cmdYellow" class="color-yellow" title="Yellow">Yellow</a>
-                <a href="#" id="cmdOrange" class="color-orange" title="Orange">Orange</a>
-            </span>
-        </div>
+                    	<!-- SIDEBAR - BLOG -->
+                    	<div class="sidebar">
+	<!-- Search blog -->
+    <div class="section-title-wr">
+	   <h3 class="section-title left"><span>Search our NewsReel</span></h3>
+    </div>
+	<div class="widget">
+        <form class="form-light form-horizontal" role="form">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search blog..."></input>
+                <span class="input-group-btn">
+                    <button class="btn btn-base" type="button">Go</button>
+                </span>
+            </div>
+        </form>
     </div>
 
-
-    <div class="panel panel-default panel-sidebar-1">
-        <div class="panel-heading"><h2>Advanced search</h2></div>
-        <div class="panel-body">
-            <form class="form-light" role="form">
-                <div class="form-group">
-                <label>Search for products</label>
-                <input type="text" class="form-control" placeholder="I want to find..."/>
-                </div>
-                <div class="form-group">
-                <label>Category</label>
-                <select class="form-control">
-                    <option>Phones</option>
-                    <option>Laptops</option>
-                    <option>Cameras</option>
-                    <option>Tablets</option>
-                </select>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"/> Display all
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-base">Search</button>
-            </form>
-        </div>
+    <!-- Categories -->
+    <div class="section-title-wr">
+	   <h3 class="section-title left"><span>Categories</span></h3>
+    </div>
+	<div class="widget">
+        <ul class="categories highlight">
+            <li><a href="#">Short Films (23)</a></li>
+            <li><a href="#">Artistes Profiles(100)</a></li>
+            <li><a href="#">Media Needs(7)</a></li>
+            <li><a href="#">Technology (33)</a></li>
+            <li><a href="#">Events(123)</a></li>
+        </ul>
     </div>
 
-    <div class="panel panel-default panel-sidebar-1">
-        <div class="panel-heading"><h2>Recently viewed</h2></div>
-        <div class="panel-body">
-            <ul class="featured">
-                <li>
-                    <div class="featured-item">
-                        <div class="featured-item-img">
-                            <img src="images/prv/product-2.jpg" alt="" class="pull-left"/>
-                        </div>
-                        <div class="feature-item-info">
-                            <h3 class="title">
-                                <a href="#">Samsung Galaxy S4</a>
-                            </h3>
-                            <div class="rating">
-                                <span class="star voted" rel="1"></span>
-                                <span class="star voted" rel="2"></span>
-                                <span class="star voted" rel="3"></span>
-                                <span class="star" rel="4"></span>
-                                <span class="star" rel="5"></span>
-                            </div>
-                            <div class="price-wr">
-                                <span class="price discount">$300.99</span>
-                                <span class="price">$233.89</span>
-                            </div>
-                        </div>
-                    </div>
+    <!-- LATEST COMMENTS -->
+    <div class="section-title-wr">
+        <h3 class="section-title left"><span>Latest Likes</span></h3>
+    </div>
+    <div class="widget-container widget-recent widget-recent-boxed widget-recent-comments">
+		<div class="inner">
+			<ul>
+				<li class="clearfix">
+					<a href="#" class="post-thumb" hidefocus="true">
+                                                    <img src="../../images/temp/thumb-6.jpg" alt=""></img>
+                             
+                    </a>
+                    <span class="comment-author"><a href="#" hidefocus="true">GECHI CHAN</a> liked</span>
+                    <span class="comment-entry">Sed molestie augue sit amet leo consequat posuere. Estibu lum ante ipsum primis in faucibus</span>
+				</li>
+                <li class="clearfix">
+                    <a href="#" class="post-thumb" hidefocus="true">
+                                                    <img src="../../images/temp/thumb-7.jpg" alt=""></img>
+                             
+                    </a>
+                    <span class="comment-author"><a href="#" hidefocus="true">MAGGIE SAND</a> liked</span>
+                    <span class="comment-entry">Estibu lum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</span>
                 </li>
-                <li>
-                    <div class="featured-item">
-                        <div class="featured-item-img">
-                            <img src="images/prv/product-3.jpg" alt="" class="pull-left"/>
-                        </div>
-                        <div class="feature-item-info">
-                            <h3 class="title">
-                                <a href="#">Asus Ultra Notebook</a>
-                            </h3>
-                            <div class="rating">
-                                <span class="star voted" rel="1"></span>
-                                <span class="star voted" rel="2"></span>
-                                <span class="star voted" rel="3"></span>
-                                <span class="star" rel="4"></span>
-                                <span class="star" rel="5"></span>
-                            </div>
-                            <div class="price-wr">
-                                <span class="price discount">$300.99</span>
-                                <span class="price">$233.89</span>
-                            </div>
-                        </div>
-                    </div>
+                <li class="clearfix">
+                    <a href="#" class="post-thumb" hidefocus="true">
+                                                    <img src="../../images/temp/thumb-8.jpg" alt=""></img>
+                                                    
+                             
+                    </a>
+                    <span class="comment-author"><a href="#" hidefocus="true">VINCE JAMIESON</a> lilked</span>
+                    <span class="comment-entry">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</span>
                 </li>
-                <li>
-                    <div class="featured-item">
-                        <div class="featured-item-img">
-                            <img src="images/prv/product-4.jpg" alt="" class="pull-left"/>
-                        </div>
-                        <div class="feature-item-info">
-                            <h3 class="title">
-                                <a href="#">PC Mouse Microsoft</a>
-                            </h3>
-                            <div class="rating">
-                                <span class="star voted" rel="1"></span>
-                                <span class="star voted" rel="2"></span>
-                                <span class="star voted" rel="3"></span>
-                                <span class="star" rel="4"></span>
-                                <span class="star" rel="5"></span>
-                            </div>
-                            <div class="price-wr">
-                                <span class="price discount">$300.99</span>
-                                <span class="price">$233.89</span>
-                            </div>
-                        </div>
-                    </div>
+                <li class="clearfix">
+                    <a href="#" class="post-thumb" hidefocus="true">
+                                                    <img src="../../images/temp/thumb-9.jpg" alt=""></img>
+                             
+                    </a>
+                    <span class="comment-author"><a href="#" hidefocus="true">KEIRA BENSON</a> liked</span>
+                    <span class="comment-entry">Vivamus hendrerit arcu seditur erat molestie vehicula. Rediters auctor neque eu tellus</span>
                 </li>
+                <li class="clearfix">
+                    <a href="#" class="post-thumb" hidefocus="true">
+                                                    <img src="../../images/temp/thumb-10.jpg" alt=""></img>
+                                                    
+                             
+                    </a>
+                    <span class="comment-author"><a href="#" hidefocus="true">MICHAEL JONES</a> liked</span>
+                    <span class="comment-entry">Rediters auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</span>
+                </li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- ARCHIVE -->
+    <div class="section-title-wr">
+	   <h3 class="section-title left"><span>Archive</span></h3>
+    </div>
+	<div class="widget">
+        <ul class="categories highlight">
+            <li><a href="#">July 2014</a></li>
+            <li><a href="#">June 2014</a></li>
+            <li><a href="#">May 2014</a></li>
+            <li><a href="#">April 2014</a></li>
+            <li><a href="#">March 2014</a></li>
+        </ul>
+    </div>
+    
+	<!-- TAG CLOUD -->
+    <div class="section-title-wr">
+	   <h3 class="section-title left"><span>Tag cloud</span></h3>
+    </div>
+	<div class="widget">
+		<div class="tagcloud base clearfix">
+			<a href="#" hidefocus="true"><span>Media</span></a>
+			<a href="#" hidefocus="true"><span>Press</span></a>
+			<a href="#" hidefocus="true"><span>Print</span></a>
+			<a href="#" hidefocus="true"><span>Cinema</span></a>
+			<a href="#" hidefocus="true"><span>Movie</span></a>
+			<a href="#" hidefocus="true"><span>Technical</span></a>
+            <a href="#" hidefocus="true"><span>International</span></a>
+		</div>
+	</div>
+
+	<!-- CALENDAR -->
+    <div class="section-title-wr">
+	   <h3 class="section-title left"><span>Event calendar</span></h3>
+    </div>
+    <div class="widget">
+        <form action="" class="sky-form">         
+            <div id="dpInline"></div>
+        </form> 
+    </div>
+
+    <!-- Date Picker - Init JS -->
+    <script type="text/javascript">
+        $(function(){            
+            // Inline datepicker
+            $('#dpInline').datepicker({
+                dateFormat: 'dd.mm.yy',
+                prevText: '<i class="fa fa-chevron-left"></i>',
+                nextText: '<i class="fa fa-chevron-right"></i>'
+            });            
+        });         
+    </script>
+
+    <!-- TABS -->
+    <div class="section-title-wr">
+       <h3 class="section-title left"><span>Tab widget</span></h3>
+    </div>
+    <div class="widget">
+        <div class="tabs-framed">
+            <ul class="tabs clearfix">
+                <li><a href="#tab-1" data-toggle="tab">Likes</a></li>
+                <li><a href="#tab-2" data-toggle="tab">Quick links</a></li>
             </ul>
+
+            <div class="tab-content">
+                <!-- Tab 1 -->
+                <div class="tab-pane fade in active" id="tab-1">
+                    <div class="tab-body">
+                        <div class="widget-recent">
+                            <div class="inner">
+                                <ul>
+                                    <li class="clearfix">
+                                        <a href="#" class="post-thumb" hidefocus="true">
+                                                                                    <img src="../../images/temp/thumb-6.jpg" alt=""></img>
+                                           
+                                        </a> 
+                                        <span class="comment-author"><a href="#" hidefocus="true">GECHI CHAN</a> wished</span>
+                                        <span class="comment-entry">Sed molestie augue sit amet leo consequat posuere. Estibu lum ante ipsum.</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="#" class="post-thumb" hidefocus="true">
+                                                                                    <img src="../../images/temp/thumb-7.jpg" alt=""></img>
+                                            
+                                        </a>
+                                        <span class="comment-author"><a href="#" hidefocus="true">MAGGIE SAND</a> wished</span>
+                                        <span class="comment-entry">Estibu lum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <a href="#" class="post-thumb" hidefocus="true">
+                                                                                    <img src="../../images/temp/thumb-8.jpg" alt=""></img>
+                                            
+                                        </a>
+                                        <span class="comment-author"><a href="#" hidefocus="true">VINCE JAMIESON</a> wished</span>
+                                        <span class="comment-entry">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                    </li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="tab-2">
+                    <div class="tab-body">
+                        <div class="widget-recent">
+                            <div class="inner">
+                                <ul class="recent">
+                                    <li>
+                                        <a href="#">Dorlorem ipsum et mea dolor sit amet, fierent adipisci iracundia est ei usu timeam persius ea</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dorlorem ipsum et mea dolor sit amet, fierent adipisci iracundia est ei usu timeam persius ea</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dorlorem ipsum et mea dolor sit amet, fierent adipisci iracundia est ei usu timeam persius ea</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dorlorem ipsum et mea dolor sit amet, fierent adipisci iracundia est ei usu timeam persius ea</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dorlorem ipsum et mea dolor sit amet, fierent adipisci iracundia est ei usu timeam persius ea</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>                    </div>
-                    <div class="col-md-9">
-                        <div class="row">
-                            <!-- Product list sort events -->
-                            <div class="col-md-12">
-                                <div class="wp-block default product-list-filters light-gray">
-                                    <span class="view-mode hidden-xs hidden-sm">
-                                        <a href="">
-                                            <i class="fa fa-th"></i>
-                                        </a>
-                                        <a href="">
-                                            <i class="fa fa-bars"></i>
-                                        </a>
-                                    </span>
-                                    <div class="filter sort-filter">
-                                        <div class="form-inline form-light">
-                                            <label>Sort by</label>
-                                            <a href="">
-                                                <i class="fa fa-arrow-down"></i>
-                                            </a>
-                                            <select class="form-control">
-                                                <option>Price</option>
-                                                <option>Most bought</option>
-                                                <option>Most reviewed</option>
-                                            </select>
-                                            
-                                            <label>Items</label>
-                                            <select class="form-control">
-                                                <option>10</option>
-                                                <option>50</option>
-                                                <option>100</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <ul class="pagination pagination">
-                                        <li><a href="#">«</a></li>
-                                        <li class="active"><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">»</a></li>
-                                    </ul>
-                                </div>
-                            </div>  
-
-                            <!-- Product list -->
-                            <div class="col-md-4">
-                                <div class="wp-block product">
-                                    <figure>
-                                        <img alt="" src="images/prv/product-1.jpg" class="img-responsive img-center"/>
-                                    </figure>
-                                    <h2 class="product-title"><a href="">Nikon Coolpix L320</a></h2>
-                                    <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
-                                    </p>
-                                    <div class="wp-block-footer">
-                                        <span class="price pull-left">RON 233.33</span>
-                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
-                                            <span>Add to cart</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-4">
-                                <div class="wp-block product">
-                                    <figure>
-                                        <img alt="" src="images/prv/product-2.jpg" class="img-responsive img-center"/>
-                                        <div class="ribbon base">Blue ribbon</div>
-                                    </figure>
-                                    <h2 class="product-title"><a href="">Samsung Galaxy S4</a></h2>
-                                    <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
-                                    </p>
-                                    <div class="wp-block-footer">
-                                        <span class="price pull-left">RON 233.33</span>
-                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
-                                            <span>Add to cart</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-4">
-                                <div class="wp-block product">
-                                    <figure>
-                                        <img alt="" src="images/prv/product-3.jpg" class="img-responsive img-center"/>
-                                        <span class="ribbon base-alt">Green ribbon</span>
-                                    </figure>
-                                    <h2 class="product-title"><a href="">Asus Ultra Notebook</a></h2>
-                                    <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
-                                    </p>
-                                    <div class="wp-block-footer">
-                                        <span class="price pull-left">RON 233.33</span>
-                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
-                                            <span>Add to cart</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="wp-block product">
-                                    <figure>
-                                        <img alt="" src="images/prv/product-1.jpg" class="img-responsive img-center"/>
-                                        <span class="ribbon red">Red ribbon</span>
-                                    </figure>
-                                    <h2 class="product-title"><a href="">Nikon Coolpix L320</a></h2>
-                                    <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
-                                    </p>
-                                    <div class="wp-block-footer">
-                                        <span class="price pull-left">RON 233.33</span>
-                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
-                                            <span>Add to cart</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-4">
-                                <div class="wp-block product">
-                                    <figure>
-                                        <img alt="" src="images/prv/product-2.jpg" class="img-responsive img-center"/>
-                                    </figure>
-                                    <h2 class="product-title"><a href="">Samsung Galaxy S4</a></h2>
-                                    <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
-                                    </p>
-                                    <div class="wp-block-footer">
-                                        <span class="price pull-left">RON 233.33</span>
-                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
-                                            <span>Add to cart</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-4">
-                                <div class="wp-block product">
-                                    <figure>
-                                        <img alt="" src="images/prv/product-3.jpg" class="img-responsive img-center"/>
-                                    </figure>
-                                    <h2 class="product-title"><a href="">Asus Ultra Notebook</a></h2>
-                                    <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisg elitm Ut tincidunt purus iaculis
-                                    </p>
-                                    <div class="wp-block-footer">
-                                        <span class="price pull-left">RON 233.33</span>
-                                        <a href="#" class="btn btn-sm btn-base btn-icon btn-cart pull-right">
-                                            <span>Add to cart</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1042,11 +733,11 @@
                     <div class="col">
                        <h4>Contact us</h4>
                        <ul>
-                            <li>5th Avenue, New York - United States</li>
-                            <li>Phone: +10 724 1234 567 | Fax: +10 724 1234 567 </li>
+                            <li>Velacherry Main Road, Chennai 600040</li>
+                            <li>Phone: +91 724 1234 56 | Fax: +91 724 1234 56 </li>
                             <li>Email: <a href="mailto:hello@example.com" title="Email Us">hello@example.com</a></li>
                             <li>Skype: <a href="skype:my.business?call" title="Skype us">my-business</a></li>
-                            <li>Creating great templates is our passion</li>
+                            <li>Creating is our passion</li>
                         </ul>
                      </div>
                 </div>
@@ -1057,7 +748,7 @@
                         <p>Sign up if you would like to receive occasional treats from us.</p>
                         <form class="form-horizontal form-light">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Your email address..."/>
+                                <input type="text" class="form-control" placeholder="Your email address..."></input>
                                 <span class="input-group-btn">
                                     <button class="btn btn-base" type="button">Go!</button>
                                 </span>
@@ -1084,8 +775,8 @@
                     <div class="col">
                         <h4>About us</h4>
                         <p class="no-margin">
-                        Boomerang MultiPurpose Template is a multi-solution product made with simplicity in mind so you can benefit as much as possible from it.
-                        <br></br>
+                        Way to Media- A Chennai Based Agency working for bringing together media people.
+                        <br></br><br></br>
                         <a href="#" class="btn btn-block btn-base btn-icon fa-check"><span>Try it now</span></a>
                         </p>
                     </div>
@@ -1096,12 +787,12 @@
             
             <div class="row">
                 <div class="col-lg-9 copyright">
-                    2014 © Web Pixels. All rights reserved.
+                    2016 © Way to Media. All rights reserved.
                     <a href="#">Terms and conditions</a>
                 </div>
                 <div class="col-lg-3">
-                    <a href="http://www.webpixels.ro" title="Made with love by Web Pixels" target="_blank" class="">
-                        <img src="images/webpixels-footer-logo.png" alt="Web Pixels - Designing Forward | Logo" class="pull-right"/>
+                    <a href="http://www.lttc.com" title="Made with love by LTTC" target="_blank" class="">
+                        <img src="../../images/webpixels-footer-logo.png" alt="LTTC- Designing" class="pull-right"></img>
                     </a>
                 </div>
             </div>
@@ -1181,5 +872,7 @@
 <script src="../../js/jquery.cookie.js"></script>
 <script src="../../js/wp.switcher.js"></script>
 <script type="text/javascript" src="../../js/wp.ga.js"></script>
+
+
 </body>
 </html>

@@ -31,6 +31,7 @@ public class W0101 extends AbstractTask {
 	
 	@Override
 	public NavEvent initTask(String dataId, TrxInfo info) throws Exception {
+		//Display a list of products 
 
 		String contentId= dataId;		
 		String response="";
