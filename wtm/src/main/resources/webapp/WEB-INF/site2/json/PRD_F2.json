@@ -1,55 +1,14 @@
 {
 	
-	"prd_desc_zn":{
-		
-			"prd_gen_nm":"",
-			"prd_alt_nm":"",
-			"prd_desc":"",
-			"prd_bran_nm":"",
-			"prd_usg_nm_lst_1":"",
-			"prd_usg_nm_lst_2":"",
-			"prd_usg_nm_lst_3":"",
-			"prd_var_nm_lst_1":"",
-			"prd_var_nm_lst_2":"",
-			"prd_var_nm_lst_3":"",
-			"prd_var_nm_lst_4":"",
-			
-			"prd_desc_zn":{
-		
-			"prd_gen_nm":"",
-			"prd_alt_nm":"",
-			"prd_desc":"",
-			"prd_bran_nm":"",
-			"prd_usg_nm_lst":[
-				{
-					"prd_usg_nm":""
-				}
-			],
-			"prd_var_nm_lst":[
-				{
-					"prd_var_nm":""
-				}
-			],		
-			"prd_pack_type_lst":[
-				{
-					"prd_type_nm":"",
-					"prd_type_qtt":"",
-					"prd_pack_prc_lst":[
-						{
-							"prd_pack_qtt":"",
-							"prd_pack_prc":"",
-							"prd_pack_prc_star_dt":"",
-							"prd_pack_prc_end_dt":""							
-						}
-					]
-				}
-			]
-		},		
 	
-	
-			"prd_act_ic":"",
-			"prd_end_dt":""
-					
-	}
+		"prd_ovv_gen_nm": "",		
+		"prd_ovv_desc": "",
+		"prd_ovv_bran_nm": "",
+		"cms_ovv_img_id": "",
+		
+		"prd_dtl_alt_nm": "",
+		"prd_dtl_dtl_desc": "",
+		"prd_dtl_usg_nm_lst_usg_nm1":"",
+		"prd_dtl_usg_nm_lst_usg_nm2":""
+		
 }
-	

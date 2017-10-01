@@ -14,7 +14,7 @@ public class ConstantsImpl implements Constants {
 	}
 
 	public String getLandingPage() {
-		return "trx/W01/LA01T";
+		return "trx/MAS01/LA01T";
 	}
 
 	public int getPortNumber() {

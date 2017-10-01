@@ -1,99 +1,76 @@
 {
-"prd_id":"",
-	"prd_ovv_zn":{
-	
-	"prd_gen_nm":"",
-	"prd_act_ic":"",
-	"prd_desc":"",
-	"prd_bran_nm":"",
-	"cms_img_id":"",
-	"cms_img_res":""
-	
+	"prd_id": 0,
+	"prd_ovv_zn": {
+		"prd_gen_nm": "",
+		"prd_act_ic": 0,
+		"prd_desc": "",
+		"prd_bran_nm": "",
+		"cms_img_id": "",
+		"cms_img_res": ""
 	},
-	
-	"adv_zn":
-		{
-			"prd_tech_nm":""
-		},		
-	
-	
-	"prd_dtl_zn":{
-					
-			"prd_alt_nm":"",
-			"prd_dtl_desc":"",
-			"prd_usg_nm_lst":[
-				{
-					"prd_usg_nm":""
-				}
-			],
-			"prd_var_nm_lst":[
-				{
-					"prd_var_nm":""
-				}
-			],		
-			"prd_pack_type_lst":[
-				{
-					"prd_type_nm":"",
-					"prd_type_qtt":"",
-					"prd_pack_prc_lst":[
-						{
-							"prd_pack_qtt":"",
-							"prd_pack_prc":"",
-							"prd_pack_prc_star_dt":"",
-							"prd_pack_prc_end_dt":""							
-						}
-					]
-				}
-			],
-			"prd_disc_rate":"",
-			"prd_disc_star_date":"",
-			"prd_disc_end_date":""
-		},		
-	
-	
-	
-			
-	"prd_hist_zn":{
-		
-			"prd_pack_prc_hist_lst":[
-				{
-					"prd_pack_qtt":"",
-					"prd_pack_prc":"",
-					"prd_pack_prc_star_dt":"",
-					"prd_pack_prc_end_dt":""							
-				}
-			],
-			"prd_disc_rate_hist_lst":[
-				{
-					"prd_disc_rate":"",
-					"prd_disc_star_date":"",
-					"prd_disc_end_date":""
-				}
-								
-			]
-			
-		
-			
+	"adv_zn": {
+		"prd_tech_nm": ""
 	},
-			
-			
-	"prd_cat_zn":{
-		
-			"prd_pri_txo_cd":"",
-			"prd_sec_txo_cd":"",
-			"prd_ter_txo_cd":"",
-					
-			"prd_cst_seg_cd":"",
-			"prd_prm_cd_lst":[
-				{
-					"prd_grp_prm_cd_type":"",
-					"prd_grp_prm_cd":""
-				}
-			],
-			"prd_end_dt":""	
-		}
-			
-					
+	"prd_dtl_zn": {
+		"prd_alt_nm": "",
+		"prd_dtl_desc": "",
+		"prd_usg_nm_lst": [
+			{
+				"prd_usg_nm": ""
+			}
+		],
+		"prd_var_nm_lst": [
+			{
+				"prd_var_nm": ""
+			}
+		]
+	},
+	"prd_prc_zn": {
+		"prd_trx_by_pack_ic": 0,
+		"prd_trx_unit": "",
+		"prd_unit_prc": 0,
+		"prd_unit_prc_star_dt": 0,
+		"prd_unit_prc_end_dt": 0,
+		"prd_pack_prc_lst": [
+			{
+				"prd_pack_qtt": 0,
+				"prd_pack_prc": 0,
+				"prd_pack_prc_star_dt": 0,
+				"prd_pack_prc_end_dt": 0
+			}
+		],
+		"prd_disc_rate": 0,
+		"prd_disc_star_date": 0,
+		"prd_disc_end_date": 0
+	},
+	"prd_hist_zn": {
+		"prd_pack_prc_hist_lst": [
+			{
+				"prd_pack_qtt": 0,
+				"prd_pack_prc": 0,
+				"prd_pack_prc_star_dt": 0,
+				"prd_pack_prc_end_dt": 0
+			}
+		],
+		"prd_disc_rate_hist_lst": [
+			{
+				"prd_disc_rate": 0,
+				"prd_disc_star_date": 0,
+				"prd_disc_end_date": 0
+			}
+		]
+	},
+	"prd_cat_zn": {
+		"prd_pri_txo_cd": "",
+		"prd_sec_txo_cd": "",
+		"prd_ter_txo_cd": "",
+		"prd_cst_seg_cd": "",
+		"prd_prm_cd_lst": [
+			{
+				"prd_grp_prm_cd_type": "",
+				"prd_grp_prm_cd": ""
+			}
+		],
+		"prd_end_dt": 0
 	}
-		
-	
+}
