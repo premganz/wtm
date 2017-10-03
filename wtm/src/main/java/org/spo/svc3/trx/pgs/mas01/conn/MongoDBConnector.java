@@ -1,4 +1,4 @@
-package org.spo.svc3.trx.pgs.mas01.con;
+package org.spo.svc3.trx.pgs.mas01.conn;
 
 import java.lang.reflect.Type;
 
