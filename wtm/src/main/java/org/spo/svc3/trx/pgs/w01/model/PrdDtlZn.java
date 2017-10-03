@@ -3,6 +3,9 @@ package org.spo.svc3.trx.pgs.w01.model;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.spo.svc3.trx.def.WtmConst;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -10,10 +13,10 @@ public class PrdDtlZn {
 
     @SerializedName("prd_alt_nm")
     @Expose
-    private String prdAltNm;
+    private String prdAltNm=WtmConst.EMP;
     @SerializedName("prd_dtl_desc")
     @Expose
-    private String prdDtlDesc;
+    private String prdDtlDesc=WtmConst.EMP;
     @SerializedName("prd_usg_nm_lst")
     @Expose
     private List<PrdUsgNmLst> prdUsgNmLst = new ArrayList<PrdUsgNmLst>();

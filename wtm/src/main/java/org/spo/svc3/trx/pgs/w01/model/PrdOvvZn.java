@@ -1,6 +1,8 @@
 
 package org.spo.svc3.trx.pgs.w01.model;
 
+import org.spo.svc3.trx.def.WtmConst;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -8,22 +10,22 @@ public class PrdOvvZn {
 
     @SerializedName("prd_gen_nm")
     @Expose
-    private String prdGenNm;
+    private String prdGenNm=WtmConst.EMP;
     @SerializedName("prd_act_ic")
     @Expose
-    private Long prdActIc;
+    private long prdActIc;
     @SerializedName("prd_desc")
     @Expose
-    private String prdDesc;
+    private String prdDesc=WtmConst.EMP;
     @SerializedName("prd_bran_nm")
     @Expose
-    private String prdBranNm;
+    private String prdBranNm=WtmConst.EMP;
     @SerializedName("cms_img_id")
     @Expose
-    private String cmsImgId;
+    private String cmsImgId=WtmConst.EMP;
     @SerializedName("cms_img_res")
     @Expose
-    private String cmsImgRes;
+    private String cmsImgRes=WtmConst.EMP;
 
     public String getPrdGenNm() {
         return prdGenNm;
@@ -33,11 +35,11 @@ public class PrdOvvZn {
         this.prdGenNm = prdGenNm;
     }
 
-    public Long getPrdActIc() {
+    public long getPrdActIc() {
         return prdActIc;
     }
 
-    public void setPrdActIc(Long prdActIc) {
+    public void setPrdActIc(long prdActIc) {
         this.prdActIc = prdActIc;
     }
 

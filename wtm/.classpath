@@ -27,11 +27,78 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/bg3"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/activemq-all-5.8.0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/activemq-amqp-5.8.0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/activemq-broker-5.8.0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/activemq-client-5.8.0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/activemq-openwire-legacy-5.8.0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/bcpkix-jdk15on-1.47.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/bcprov-jdk15on-1.47.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/geronimo-jms_1.1_spec-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/groovy-all-2.3.0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/gson-1.7.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/hawtbuf-1.9.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/httpclient-4.3.6.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/httpcore-4.3.3.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jackson-annotations-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jackson-core-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jackson-databind-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/javassist-3.16.1-GA.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jcl-over-slf4j-1.7.7.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jetty-continuation-9.2.11.M0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jetty-http-9.2.11.M0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jetty-io-9.2.11.M0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jetty-security-9.2.9.v20150224.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jetty-server-9.2.9.v20150224.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jetty-servlet-9.2.9.v20150224.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jetty-servlets-9.2.11.M0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jetty-util-9.2.11.M0.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jetty-webapp-9.2.9.v20150224.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jetty-xml-9.2.9.v20150224.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/jython-2.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/mail-1.4.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/metrics-core-3.0.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/metrics-healthchecks-3.0.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/metrics-json-3.0.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/metrics-jvm-3.0.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/metrics-servlets-3.0.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/ognl-3.0.8.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/poi-ooxml-schemas-3.9.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/proton-0.3.0-fuse-2.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/proton-api-0.3.0-fuse-2.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/proton-jms-0.3.0-fuse-2.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-aop-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-beans-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-context-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-core-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-expression-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-jms-4.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-messaging-4.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-security-config-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-security-core-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-security-web-3.2.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-tx-4.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-web-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/spring-webmvc-4.0.3.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/thymeleaf-2.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/thymeleaf-spring4-2.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/unbescape-1.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="/bg3/target/lib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="target/lib/mongo-java-driver-3.5.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

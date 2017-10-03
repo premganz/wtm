@@ -8,35 +8,35 @@ public class PrdDiscRateHistLst {
 
     @SerializedName("prd_disc_rate")
     @Expose
-    private Long prdDiscRate;
+    private long prdDiscRate;
     @SerializedName("prd_disc_star_date")
     @Expose
-    private Long prdDiscStarDate;
+    private long prdDiscStarDate;
     @SerializedName("prd_disc_end_date")
     @Expose
-    private Long prdDiscEndDate;
+    private long prdDiscEndDate;
 
-    public Long getPrdDiscRate() {
+    public long getPrdDiscRate() {
         return prdDiscRate;
     }
 
-    public void setPrdDiscRate(Long prdDiscRate) {
+    public void setPrdDiscRate(long prdDiscRate) {
         this.prdDiscRate = prdDiscRate;
     }
 
-    public Long getPrdDiscStarDate() {
+    public long getPrdDiscStarDate() {
         return prdDiscStarDate;
     }
 
-    public void setPrdDiscStarDate(Long prdDiscStarDate) {
+    public void setPrdDiscStarDate(long prdDiscStarDate) {
         this.prdDiscStarDate = prdDiscStarDate;
     }
 
-    public Long getPrdDiscEndDate() {
+    public long getPrdDiscEndDate() {
         return prdDiscEndDate;
     }
 
-    public void setPrdDiscEndDate(Long prdDiscEndDate) {
+    public void setPrdDiscEndDate(long prdDiscEndDate) {
         this.prdDiscEndDate = prdDiscEndDate;
     }
 

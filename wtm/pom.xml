@@ -32,7 +32,7 @@
 		<dependency>
 			<groupId>com.github.premganz</groupId>
 			<artifactId>bg3</artifactId>
-			<version>v1.6.1</version>
+			<version>b1.6.2</version>
 		</dependency>
 <!-- 
 		<dependency>

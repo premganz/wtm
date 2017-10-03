@@ -8,31 +8,31 @@ public class Prd {
 
     @SerializedName("prd_id")
     @Expose
-    private Long prdId;
+    private long prdId;
     @SerializedName("prd_ovv_zn")
     @Expose
-    private PrdOvvZn prdOvvZn;
+    private PrdOvvZn prdOvvZn=new PrdOvvZn();
     @SerializedName("adv_zn")
     @Expose
-    private AdvZn advZn;
+    private AdvZn advZn=new AdvZn();
     @SerializedName("prd_dtl_zn")
     @Expose
-    private PrdDtlZn prdDtlZn;
+    private PrdDtlZn prdDtlZn=new PrdDtlZn();
     @SerializedName("prd_prc_zn")
     @Expose
-    private PrdPrcZn prdPrcZn;
+    private PrdPrcZn prdPrcZn=new PrdPrcZn();
     @SerializedName("prd_hist_zn")
     @Expose
-    private PrdHistZn prdHistZn;
+    private PrdHistZn prdHistZn=new PrdHistZn();
     @SerializedName("prd_cat_zn")
     @Expose
-    private PrdCatZn prdCatZn;
+    private PrdCatZn prdCatZn=new PrdCatZn();
 
-    public Long getPrdId() {
+    public long getPrdId() {
         return prdId;
     }
 
-    public void setPrdId(Long prdId) {
+    public void setPrdId(long prdId) {
         this.prdId = prdId;
     }
 

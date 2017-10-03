@@ -8,46 +8,46 @@ public class PrdPackPrcHistLst {
 
     @SerializedName("prd_pack_qtt")
     @Expose
-    private Long prdPackQtt;
+    private long prdPackQtt;
     @SerializedName("prd_pack_prc")
     @Expose
-    private Long prdPackPrc;
+    private long prdPackPrc;
     @SerializedName("prd_pack_prc_star_dt")
     @Expose
-    private Long prdPackPrcStarDt;
+    private long prdPackPrcStarDt;
     @SerializedName("prd_pack_prc_end_dt")
     @Expose
-    private Long prdPackPrcEndDt;
+    private long prdPackPrcEndDt;
 
-    public Long getPrdPackQtt() {
+    public long getPrdPackQtt() {
         return prdPackQtt;
     }
 
-    public void setPrdPackQtt(Long prdPackQtt) {
+    public void setPrdPackQtt(long prdPackQtt) {
         this.prdPackQtt = prdPackQtt;
     }
 
-    public Long getPrdPackPrc() {
+    public long getPrdPackPrc() {
         return prdPackPrc;
     }
 
-    public void setPrdPackPrc(Long prdPackPrc) {
+    public void setPrdPackPrc(long prdPackPrc) {
         this.prdPackPrc = prdPackPrc;
     }
 
-    public Long getPrdPackPrcStarDt() {
+    public long getPrdPackPrcStarDt() {
         return prdPackPrcStarDt;
     }
 
-    public void setPrdPackPrcStarDt(Long prdPackPrcStarDt) {
+    public void setPrdPackPrcStarDt(long prdPackPrcStarDt) {
         this.prdPackPrcStarDt = prdPackPrcStarDt;
     }
 
-    public Long getPrdPackPrcEndDt() {
+    public long getPrdPackPrcEndDt() {
         return prdPackPrcEndDt;
     }
 
-    public void setPrdPackPrcEndDt(Long prdPackPrcEndDt) {
+    public void setPrdPackPrcEndDt(long prdPackPrcEndDt) {
         this.prdPackPrcEndDt = prdPackPrcEndDt;
     }
 

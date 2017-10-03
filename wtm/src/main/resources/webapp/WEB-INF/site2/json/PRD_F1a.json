@@ -5,9 +5,11 @@
 		"prd_ovv_desc": "",
 		"prd_ovv_bran_nm": "",
 		"cms_ovv_img_id": "",
+		"prd_act_ic":0,
 		
 		"prd_dtl_alt_nm": "",
 		"prd_dtl_dtl_desc": "",
+		
 		"prd_dtl_usg_nm_lst_usg_nm1":"",
 		"prd_dtl_usg_nm_lst_usg_nm2":""
 		

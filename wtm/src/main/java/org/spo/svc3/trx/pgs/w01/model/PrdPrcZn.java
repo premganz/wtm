@@ -3,6 +3,9 @@ package org.spo.svc3.trx.pgs.w01.model;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.spo.svc3.trx.def.WtmConst;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -10,37 +13,37 @@ public class PrdPrcZn {
 
     @SerializedName("prd_trx_by_pack_ic")
     @Expose
-    private Long prdTrxByPackIc;
+    private long prdTrxByPackIc;
     @SerializedName("prd_trx_unit")
     @Expose
-    private String prdTrxUnit;
+    private String prdTrxUnit=WtmConst.EMP;
     @SerializedName("prd_unit_prc")
     @Expose
-    private Long prdUnitPrc;
+    private long prdUnitPrc;
     @SerializedName("prd_unit_prc_star_dt")
     @Expose
-    private Long prdUnitPrcStarDt;
+    private long prdUnitPrcStarDt;
     @SerializedName("prd_unit_prc_end_dt")
     @Expose
-    private Long prdUnitPrcEndDt;
+    private long prdUnitPrcEndDt;
     @SerializedName("prd_pack_prc_lst")
     @Expose
     private List<PrdPackPrcLst> prdPackPrcLst = new ArrayList<PrdPackPrcLst>();
     @SerializedName("prd_disc_rate")
     @Expose
-    private Long prdDiscRate;
+    private long prdDiscRate;
     @SerializedName("prd_disc_star_date")
     @Expose
-    private Long prdDiscStarDate;
+    private long prdDiscStarDate;
     @SerializedName("prd_disc_end_date")
     @Expose
-    private Long prdDiscEndDate;
+    private long prdDiscEndDate;
 
-    public Long getPrdTrxByPackIc() {
+    public long getPrdTrxByPackIc() {
         return prdTrxByPackIc;
     }
 
-    public void setPrdTrxByPackIc(Long prdTrxByPackIc) {
+    public void setPrdTrxByPackIc(long prdTrxByPackIc) {
         this.prdTrxByPackIc = prdTrxByPackIc;
     }
 
@@ -52,27 +55,27 @@ public class PrdPrcZn {
         this.prdTrxUnit = prdTrxUnit;
     }
 
-    public Long getPrdUnitPrc() {
+    public long getPrdUnitPrc() {
         return prdUnitPrc;
     }
 
-    public void setPrdUnitPrc(Long prdUnitPrc) {
+    public void setPrdUnitPrc(long prdUnitPrc) {
         this.prdUnitPrc = prdUnitPrc;
     }
 
-    public Long getPrdUnitPrcStarDt() {
+    public long getPrdUnitPrcStarDt() {
         return prdUnitPrcStarDt;
     }
 
-    public void setPrdUnitPrcStarDt(Long prdUnitPrcStarDt) {
+    public void setPrdUnitPrcStarDt(long prdUnitPrcStarDt) {
         this.prdUnitPrcStarDt = prdUnitPrcStarDt;
     }
 
-    public Long getPrdUnitPrcEndDt() {
+    public long getPrdUnitPrcEndDt() {
         return prdUnitPrcEndDt;
     }
 
-    public void setPrdUnitPrcEndDt(Long prdUnitPrcEndDt) {
+    public void setPrdUnitPrcEndDt(long prdUnitPrcEndDt) {
         this.prdUnitPrcEndDt = prdUnitPrcEndDt;
     }
 
@@ -84,27 +87,27 @@ public class PrdPrcZn {
         this.prdPackPrcLst = prdPackPrcLst;
     }
 
-    public Long getPrdDiscRate() {
+    public long getPrdDiscRate() {
         return prdDiscRate;
     }
 
-    public void setPrdDiscRate(Long prdDiscRate) {
+    public void setPrdDiscRate(long prdDiscRate) {
         this.prdDiscRate = prdDiscRate;
     }
 
-    public Long getPrdDiscStarDate() {
+    public long getPrdDiscStarDate() {
         return prdDiscStarDate;
     }
 
-    public void setPrdDiscStarDate(Long prdDiscStarDate) {
+    public void setPrdDiscStarDate(long prdDiscStarDate) {
         this.prdDiscStarDate = prdDiscStarDate;
     }
 
-    public Long getPrdDiscEndDate() {
+    public long getPrdDiscEndDate() {
         return prdDiscEndDate;
     }
 
-    public void setPrdDiscEndDate(Long prdDiscEndDate) {
+    public void setPrdDiscEndDate(long prdDiscEndDate) {
         this.prdDiscEndDate = prdDiscEndDate;
     }
 

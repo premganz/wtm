@@ -82,6 +82,13 @@ public class W0101 extends AbstractTask {
 	}
 
 	@Override
+	public NavEvent processViewResult(String event,  Object form, TrxInfo info) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	@Override
 	public String processAjaxEvent(String event, TrxInfo info) {
 		return "";
 	}

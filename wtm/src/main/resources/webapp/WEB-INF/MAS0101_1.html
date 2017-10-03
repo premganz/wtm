@@ -7,6 +7,10 @@
 <body>
 <div th:fragment="copy">    
     <!-- MAIN CONTENT -->
+    
+                
+                
+                
         <div class="pg-opt">
         <div class="container">
             <div class="row">
@@ -46,7 +50,7 @@
                                         <h2>Shipping information</h2>
                                     </div>
                                     <div class="form-body">
-                                        <form action="" id="frmRegister" class="sky-form">                                    
+                                                                        
                                             <fieldset class="no-padding">    
                                                 <section>
                                                     <label class="checkbox">
@@ -57,17 +61,29 @@
                                                 <hr></hr>            
                                                 <section>
                                                     <div class="row">
-                                                        <div class="col-xs-6">
-                                                            <div class="form-group">
+                                                        
+															<form name="formSubmit" id="formSubmit" th:action="@{./formSubmit}" class= "sky-form" method="post"
+																novalidate='false'>
+																<div class="col-xs-6">
+                                                            	<div class="form-group">
                                                                 <label class="label">Product Id</label>
                                                                 <label class="input">
                                                                     <i class="icon-append fa fa-user"></i>
-                                                                    <input type="text" name="username" placeholder="" ></input>
+                                                                    <input type="text"
+																			class="form-control" th:field="${form.prdOvvGenNm}"
+																			placeholder="Name" id="name" required='true'
+																			data-validation-required-message="Please enter your name."></input>
+																			 <button type="submit" class="btn btn-default">Send</button>
                                                                     <b class="tooltip tooltip-bottom-right">Needed to enter the website</b>
                                                                 </label>
                                                             </div>               
                                                         </div>
-                                                        <div class="col-xs-6">
+																
+
+															</form>
+
+
+															<div class="col-xs-6">
                                                             <div class="form-group">
                                                                 <div class="form-group">
                                                                     <label class="label">Product General Name</label>
@@ -186,7 +202,6 @@
                                                     </label>
                                                 </section>
                                             </fieldset>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
