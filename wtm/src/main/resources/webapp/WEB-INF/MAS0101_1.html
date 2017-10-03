@@ -62,7 +62,7 @@
                                                 <section>
                                                     <div class="row">
                                                         
-															<form name="formSubmit" id="formSubmit" th:action="@{./formSubmit}" class= "sky-form" method="post"
+															<form name="formSubmit" id="formSubmit" th:action="@{./FORM}" class= "sky-form" method="post"
 																novalidate='false'>
 																<div class="col-xs-6">
                                                             	<div class="form-group">
@@ -70,7 +70,7 @@
                                                                 <label class="input">
                                                                     <i class="icon-append fa fa-user"></i>
                                                                     <input type="text"
-																			class="form-control" th:field="${form.prdOvvGenNm}"
+																			class="form-control" th:field="${form.form[prd_ovv_gen_nm]}"
 																			placeholder="Name" id="name" required='true'
 																			data-validation-required-message="Please enter your name."></input>
 																			 <button type="submit" class="btn btn-default">Send</button>

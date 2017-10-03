@@ -10,6 +10,7 @@ import org.spo.ifs3.dsl.controller.NavEvent;
 import org.spo.ifs3.dsl.controller.TrxInfo;
 import org.spo.ifs3.dsl.model.AbstractTask;
 import org.spo.svc3.trx.pgs.m99.cmd.LA01T;
+import org.spo.svc3.trx.pgs.mas01.toolkit.MAS01Toolkit;
 import org.spo.svc3.trx.pgs.w01.handler.W01Handler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -34,29 +35,8 @@ public class MAS0102 extends AbstractTask {
 		String contentId= dataId;		
 		String response="";
 		String response_content="";
-
-		response = svc.readUpPage("templates", contentId);
-
-		String dataId_Content="" ;
-		if(dataId.equals("LA01T")){
-			//regular Menu can be mapped with A01T content
-			dataId_Content = "B01T";
-
-		}
-
-		response_content = svc.readUpPage("templates", dataId_Content);
-
-		try{
-			Gson gson = new Gson();
-			Type typ = new TypeToken<LA01T>(){}.getType();//FIXME right now only string works
-			LA01T cmd_menu= gson.fromJson(response,typ);		
-			info.addToModelMap("menu",cmd_menu);
-
-		}catch(Exception e){
-			System.out.println("Error during messagePayload processing from  TestResourceServerException on" );
-			e.printStackTrace();
-		}
-
+		info.addToModelMap("prd1",info.get(MAS01Toolkit.SV_PRD));
+		
 		return W01Handler.EV_INIT_02;
 	}
 	
@@ -74,7 +54,7 @@ public class MAS0102 extends AbstractTask {
 	}
 	
 	@Override
-	public NavEvent processViewResult(String event,  Object form, TrxInfo info) {
+	public NavEvent processViewResult(String event,   String json, TrxInfo info) {
 		// TODO Auto-generated method stub
 		return null;
 	}

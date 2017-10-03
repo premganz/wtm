@@ -1,7 +1,10 @@
 package org.spo.svc3.trx.pgs.mas01.conn;
 
 import java.lang.reflect.Type;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
+import org.spo.svc3.trx.pgs.w01.form.PrdForm01;
 import org.spo.svc3.trx.pgs.w01.model.Prd;
 
 import com.google.gson.Gson;
@@ -38,7 +41,21 @@ public class MongoDBConnector {
 	}
 	
 	public static void main(String[] args) {
-		MongoDBConnector.create(new Prd());
+		//MongoDBConnector.create(new Prd());
+		
+		PrdForm01 prd = new PrdForm01();
+		Gson gson = new Gson();
+		Type typ = new TypeToken<PrdForm01>(){}.getType();
+		String json = gson.toJson(prd, typ);
+		System.out.println(json);
+		Map<String,String> map = new LinkedHashMap<String,String>(); 
+		Type typ1 = new TypeToken<Map<String, String>>(){}.getType();
+		//map = gson.fromJson("{\"hello\":\"hi\"}",typ1);
+		map = gson.fromJson(json,typ1);
+		
+		System.out.println(map);
+		
+		
 	}
 	
 	

@@ -10,6 +10,7 @@ import org.spo.ifs3.dsl.controller.NavEvent;
 import org.spo.ifs3.dsl.controller.TrxInfo;
 import org.spo.ifs3.dsl.model.AbstractTask;
 import org.spo.svc3.trx.pgs.mas01.handler.MAS01Handler;
+import org.spo.svc3.trx.pgs.mas01.toolkit.MAS01Toolkit;
 import org.spo.svc3.trx.pgs.w01.form.PrdForm01;
 import org.spo.svc3.trx.pgs.w01.handler.W01Handler;
 import org.spo.svc3.trx.pgs.w01.model.Prd;
@@ -40,7 +41,7 @@ public class MAS0101 extends AbstractTask {
 			Type typ = new TypeToken<Prd>(){}.getType();//FIXME right now only string works
 			//Prd cmd= gson.fromJson(response_content,typ);		
 			info.addToModelMap("prd",new Prd());
-			info.addToModelMap("form",new PrdForm01());	
+			info.addToModelMap("form",prepareForm(new PrdForm01().toString()));	
 			//System.out.println(cmd.toString());
 
 		}catch(Exception e){
@@ -74,8 +75,15 @@ public class MAS0101 extends AbstractTask {
 
 	
 	@Override
-	public NavEvent processViewResult(String event, Object form, TrxInfo info) {		
-		PrdForm01 form1 = (PrdForm01)form;
+	public NavEvent processViewResult(String event, String json, TrxInfo info) {		
+		Type typ = new TypeToken<PrdForm01>(){}.getType();
+		String x ="";
+		Gson gson = new Gson();
+		PrdForm01 form = gson.fromJson(json, typ);
+		Prd prd= new Prd();
+		prd.getPrdOvvZn().setPrdGenNm(form.getPrdOvvGenNm());
+		
+		info.put(MAS01Toolkit.SV_PRD,prd);
 		return MAS01Handler.EV_NEXT_SCREEN;
 	}
 	
