@@ -55,8 +55,8 @@ public class MAS0102 extends AbstractTask {
 	
 	@Override
 	public NavEvent processViewResult(String event,   String json, TrxInfo info) {
-		// TODO Auto-generated method stub
-		return null;
+		info.addToModelMap("prd1",info.get(MAS01Toolkit.SV_PRD));
+		return W01Handler.EV_INIT_02;
 	}
 	
 	

@@ -35,20 +35,13 @@
 </head>
 <body>
 <div th:include="header_links :: copy"></div>
+
 <div th:include="header_menu :: copy"></div>
 <!-- MAIN WRAPPER -->
 <div class="body-wrap">
 <h4>Confirm</h4>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-	<div class="container">
-        <div class="row">            
-			<div th:utext="${prd1.prdOvvZn.prdGenNm}"></div>
-            </div>
-        </div>
+
+	<div th:include="MAS0102_1 :: copy"></div>
    
 
 <div th:include="footer_menu :: copy"></div>

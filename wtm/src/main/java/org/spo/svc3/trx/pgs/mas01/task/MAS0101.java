@@ -75,14 +75,12 @@ public class MAS0101 extends AbstractTask {
 
 	
 	@Override
-	public NavEvent processViewResult(String event, String json, TrxInfo info) {		
+	public NavEvent processViewResult(String event, String jsonIn, TrxInfo info) {		
 		Type typ = new TypeToken<PrdForm01>(){}.getType();
-		String x ="";
 		Gson gson = new Gson();
-		PrdForm01 form = gson.fromJson(json, typ);
+		PrdForm01 form = gson.fromJson(jsonIn, typ);
 		Prd prd= new Prd();
 		prd.getPrdOvvZn().setPrdGenNm(form.getPrdOvvGenNm());
-		
 		info.put(MAS01Toolkit.SV_PRD,prd);
 		return MAS01Handler.EV_NEXT_SCREEN;
 	}

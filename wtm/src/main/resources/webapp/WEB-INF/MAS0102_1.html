@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>  
+<head>
+  
+    
+</head>
+<body>
+<div th:fragment="copy">    
+    <!-- MAIN CONTENT -->
+    
+                
+                
+                
+        <div class="pg-opt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Shipping information</h2>
+                </div>
+                <div class="col-md-6">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Checkout progress</a></li>
+                        <li class="active">Shipping information</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<button type="submit" class="btn btn-default" href ="./trx">Previous</button>
+							<table class="table table-bordered table-striped table-hover table-responsive">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><strong>Property Size:</strong>  <div th:utext="${prd1.prdOvvZn.prdGenNm}"></div></td>
+                                                            <td><strong>Lot size:</strong> 5000 Sq Ft</td>
+                                                            <td><strong>Price:</strong> RON 23000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>Rooms:</strong> 5</td>
+                                                            <td><strong>Bedrooms:</strong> 4</td>
+                                                            <td><strong>Bathrooms:</strong> 2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>Garages:</strong> 2</td>
+                                                            <td><strong>Roofing:</strong> New</td>
+                                                            <td><strong>Structure Type:</strong> Bricks</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>Year built:</strong> 1991</td>
+                                                            <td><strong>Available from:</strong> 1 August 2014</td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+</div>
+</body>
+</html>
